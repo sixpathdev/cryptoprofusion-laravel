@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Referral;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -35,6 +36,19 @@ class AuthController extends Controller
 
                 //if operation was successful save changes to database
                 DB::commit();
+
+                $referred_user = User::where('email', $request->input('email'))->first();
+
+                Referral::create([
+                    'referral' => $request->input('referral'),
+                    'referred' => $referred_user->id,
+                    'bonus' => 0
+                ]);
+
+                // $referral = new Referral();
+                // $referral->referral = $request('referral');
+                // $referral->referred = $referred_user->id;
+                // $referral->save();
 
                 $request->session()->flash('success', "Registration successful");
                 return redirect('/login');

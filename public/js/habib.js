@@ -13,3 +13,8 @@ sideNavCloseButton.addEventListener('click', () => {
     sidenav.classList.add('sidenav__unactive');
     sideNavCloseButton.classList.remove('body__click__active');
 });
+
+$("#proceed_stepOne").on('click', function(){
+    $("#step_one").hide()
+    $("#upload_proof").show()
+})

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e7c9ce532163bfd49a62fb61edabda1",
+    "content-hash": "b72e770a4f3e155f9573b64812b2a16c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -109,50 +109,6 @@
                 }
             ],
             "time": "2020-04-15T15:59:35+00:00"
-        },
-        {
-            "name": "coinbase/coinbase-commerce",
-            "version": "1.0.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "af80e93b8857f80740044510756e647420527b4b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/af80e93b8857f80740044510756e647420527b4b",
-                "reference": "af80e93b8857f80740044510756e647420527b4b",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "~5.0|~6.0",
-                "php": ">=5.4.0",
-                "psr/http-message": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.7",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "CoinbaseCommerce\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Coinbase Commerce API library",
-            "homepage": "https://commerce.coinbase.com/",
-            "keywords": [
-                "bitcoin",
-                "coinbase",
-                "coinbase-commerce",
-                "ethereum",
-                "litecoin"
-            ],
-            "time": "2020-04-29T17:00:24+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

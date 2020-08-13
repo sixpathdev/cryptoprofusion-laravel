@@ -49,10 +49,6 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
-use CoinbaseCommerce\ApiClient;
-$apiClientObj = ApiClient::init(env('COINBASE_API_KEY'));
-$apiClientObj->setTimeout(3);
-
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(

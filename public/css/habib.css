@@ -279,3 +279,10 @@ input.form-control, button.btn {
         margin-left: 235px;
     }
 }
+.page-link {
+    color: #6ea826;
+}
+.page-item.active .page-link {
+    background-color: #6ea826;
+    border: 1px solid #6ea826;
+}

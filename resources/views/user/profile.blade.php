@@ -27,21 +27,25 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group mb-4">
+                            <label for="fullname" class="text-muted">Full Name</label>
                             <input type="fullname" class="form-control form-control-lg" name="fullname" placeholder="Fullname"
                                 id="fullname" value="{{$user->fullname}}">
                         </div>
                         <div class="form-row mb-2">
                             <div class="form-group col-md-6">
+                                <label for="email" class="text-muted">Email</label>
                                 <input type="fullname" class="form-control form-control-lg" name="email" placeholder="Email"
                                     id="email" value="{{$user->email}}">
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="tel" class="form-control form-control-lg" name="phone" placeholder="Phone"
+                                <label for="phone" class="text-muted">Phone</label>
+                                <input type="tel" id="phone" class="form-control form-control-lg" name="phone" placeholder="Phone"
                                     value="{{$user->phone}}">
                             </div>
                         </div>
 
                         <div class="form-group mb-4">
+                            <label for="phone" class="text-muted">Bitcoin Address</label>
                             <input type="text" class="form-control form-control-lg" name="address" placeholder="Wallet Address"
                                 value="{{ $user->wallet->address }}">
                         </div>

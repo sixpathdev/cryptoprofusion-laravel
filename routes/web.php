@@ -25,6 +25,9 @@ Route::get('/register', "AuthController@registerForm");
 Route::post('/login', 'AuthController@login');
 Route::post('/register', 'AuthController@register');
 Route::get('/logout', 'AuthController@logout');
+// Route::get('/temp', function(){
+//     return view('emails.duepayment-notification');
+// });
 
 
 Route::prefix('user')->group(function () {
@@ -33,7 +36,11 @@ Route::prefix('user')->group(function () {
     Route::put('/profile', 'UserController@updateProfile');
     Route::get('/payment-plan', 'UserController@paymentplanPage');
     Route::get('/plan/{plan_name}', 'UserController@paymentForm');
-    Route::post('/initialize-transaction', 'TransactionController@createCharge');
-    Route::get('/charges', 'TransactionController@getAllCharges');
-    Route::get('/webhook', 'TransactionController@webhook');
+    Route::post('/uploadproof', 'UserController@uploadproof');
+    Route::get('/duehook', 'HookController@duehook');
+});
+
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard', 'UserController@admindashboard');
+    Route::put('/verifypayment', 'UserController@verifyClientPayment');
 });

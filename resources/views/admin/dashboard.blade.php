@@ -27,24 +27,16 @@
                 <div class="col-12 mb-2 col-lg-6 mb-lg-0">
                     <div class="card">
                         <div class="card-body py-5">
-                            <p class="h3 text-center">Deposited Amount</p>
-                            <p class="h3 text-center">{{ '$'.$total_deposited_amount }}</p>
+                            <p class="h3 text-center">Total Deposited</p>
+                        <p class="h3 text-center">{{ '$'.$total_deposited_amount }}</p>
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-12 mb-2 col-lg-6 mb-lg-0">
-                    <div class="card">
-                        <div class="card-body py-5">
-                            <p class="h3 text-center">Investment Profits</p>
-                            <p class="h3 text-center">$0</p>
-                        </div>
-                    </div>
-                </div> --}}
                 <div class="col-12 mb-2 col-lg-6 mb-lg-0">
                     <div class="card">
                         <div class="card-body py-5">
-                            <p class="h3 text-center">Referral Bonus</p>
-                            <p class="h3 text-center">{{ '$'.$total_referral_amount }}</p>
+                            <p class="h3 text-center">Total Referrals</p>
+                            <p class="h3 text-center">$0</p>
                         </div>
                     </div>
                 </div>
@@ -62,6 +54,7 @@
                                             <th scope="col">Wallet Address</th>
                                             <th scope="col">Payment Date</th>
                                             <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -75,6 +68,19 @@
                                                 <span class="p-2"
                                                     style="background: white;border-radius:20px;">{{$mytransactions[$i]->payment_status}}</span>
                                             </td>
+                                            <td>
+                                                @if ($mytransactions[$i]->payment_status == 'pending')
+                                                    <form action="/admin/verifypayment" method="POST">
+                                                        @csrf
+                                                        @method('PUT')
+                                                    <input type="hidden" name="txid" value="{{$mytransactions[$i]->id}}">
+                                                    <input type="hidden" name="userId" value="{{$mytransactions[$i]->userId}}">
+                                                    <button type="submit" name="submit" class="btn bg-primary text-white">Verify</button>
+                                                    </form>
+                                                @else
+                                                <button type="submit" name="submit" class="btn bg-success text-white">Verified</button>
+                                                @endif
+                                            </td>
                                             </tr>
                                             @endfor
                                     </tbody>
@@ -87,7 +93,6 @@
             </div>
 
         </div>
-
         <!-- Page content ends -->
     </div>
 </div>
