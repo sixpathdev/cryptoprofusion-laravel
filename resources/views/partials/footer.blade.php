@@ -10,14 +10,8 @@
                                 <a class="footer-black-logo" href="index.html#"><img src="img/logo/logo.png" alt=""></a>
                             </div>
                             <p>
-                                Are you looking for professional advice for your new business. Are you looking for professional advice for your new business. Are you looking for professional advice for your new business.
+                                Cryptoprofusion is a true opportunity to earn on cryptocurrency/binary.Ultimate Trade is a company formed by a team of PROFESSIONAL TRADERS with EXPERTISE in one of the biggest financial markets of today, the CRYPTOCURRENCY/BINARY.
                             </p>
-                            {{-- <div class="subs-feilds">
-                                <div class="suscribe-input">
-                                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Type Email">
-                                    <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -42,37 +36,7 @@
                             <div class="footer-contacts">
                                 <p><span>Tel :</span> <small>+1 312-883-3771</small></p>
                                 <p><span>Email :</span> <small>support@cryptoprofusion.com</small></p>
-                                {{-- <p><span>Location :</span> House- 65/4, London</p> --}}
-                            </div> 
-                            {{-- <div class="footer-icons">
-                                <ul>
-                                    <li>
-                                        <a href="index.html#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">
-                                            <i class="fa fa-google"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">
-                                            <i class="fa fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>

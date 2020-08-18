@@ -17,7 +17,7 @@ class CreateReferralsTable extends Migration
             $table->id();
             $table->string('referral');
             $table->string('referred');
-            $table->string('bonus');
+            $table->float('bonus');
             $table->timestamps();
         });
     }

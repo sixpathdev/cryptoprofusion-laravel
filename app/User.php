@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'fullname', 'email', 'password', 'phone',
+        'fullname', 'email', 'password', 'phone', 'user_id', 'photo'
     ];
 
     /**
@@ -39,6 +39,16 @@ class User extends Authenticatable
 
     public function wallet()
     {
-        return $this->hasOne('App\Wallet', 'user');
+        return $this->hasOne('App\Wallet');
+    }
+
+    public function userDescendants()
+    {
+        return $this->hasMany('App\User');
+    }
+
+    public function childrenUserDescendants()
+    {
+        return $this->hasMany('App\User')->with('userDescendants');
     }
 }

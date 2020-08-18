@@ -11,7 +11,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <!-- Start Slider content -->
                         <div class="slide-content text-center">
-                            <span class="title2">Invest and Earn Weekly with over 5% Weekly</span>
+                            <span class="title2">Invest and Earn Weekly with over 4% Weekly</span>
                             <div class="layer-1-3">
                                 <a href="/register" class="ready-btn left-btn">Get started</a>
                             </div>
@@ -74,7 +74,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="section-headline text-center">
                     <h3>Investment Plans</h3>
-                    <p>You receive 5% of your investment in every 7 days interval</p>
+                    <p>You receive the percentage on choice of plan weekly for 6months and after 6months you get back your capital.</p>
                 </div>
             </div>
         </div>
@@ -85,12 +85,12 @@
                     <div class="pri_table_list">
                         <div class="top-price-inner">
                             <div class="rates text-center" style="display: flex;flex-direction:column;align-items:center;">
-                                <span class="users h2" style="color: bronze;">Bronze</span><span class="prices">5%</span>
+                                <span class="users h2" style="color: bronze;">Bronze</span><span class="prices">4%</span>
                             </div>
                         </div>
                         <ol class="pricing-text">
-                            <li class="check">Minimum Invest : $100</li>
-                            <li class="check">Maximum Invest : $800</li>
+                            <li class="check">Minimum Invest : $150</li>
+                            <li class="check">Maximum Invest : $1500</li>
                         </ol>
                         <div class="price-btn blue" style="display:flex;justify-content:center;">
                             <a class="blue" href="/login">Deposit</a>
@@ -103,12 +103,12 @@
                             <span class="base">Popular</span>
                             <div class="rates" style="display: flex;flex-direction:column;align-items:center;">
                                 <span class="users h2" style="color: silver;">Silver</span>
-                                <span class="prices">6%</span>
+                                <span class="prices">5%</span>
                             </div>
                         </div>
                         <ol class="pricing-text">
-                            <li class="check">Minimum Invest : $900</li>
-                            <li class="check">Maximum Invest : $1400</li>
+                            <li class="check">Minimum Invest : $2000</li>
+                            <li class="check">Maximum Invest : $9000</li>
                         </ol>
                         <div class="price-btn blue" style="display:flex;justify-content:center;">
                             <a class="blue" href="/login">Deposit</a>
@@ -121,12 +121,12 @@
                         <div class="top-price-inner">
                             <div class="rates" style="display: flex;flex-direction:column;align-items:center;">
                                 <span class="users h2" style="color: gold;">Gold</span>
-                                <span class="prices">7%</span>
+                                <span class="prices">6%</span>
                             </div>
                         </div>
                         <ol class="pricing-text">
-                            <li class="check">Minimum Invest : $1500</li>
-                            <li class="check">Maximum Invest : $2000</li>
+                            <li class="check">Minimum Invest : $10,000</li>
+                            <li class="check">Maximum Invest : $50,000</li>
                         </ol>
                         <div class="price-btn blue" style="display:flex;justify-content:center;">
                             <a class="blue" href="/login">Deposit</a>
@@ -310,21 +310,21 @@
                                     <th>Currency</th>
                                 </tr>
                                 <tr>
-                                    <td>Jonshon</td>
-                                    <td>July 12, 2020</td>
-                                    <td>$500</td>
+                                    <td>Gabriel Jacks</td>
+                                    <td>May 06, 2020</td>
+                                    <td>$1700</td>
                                     <td>Bitcoin</td>
                                 </tr>
                                 <tr>
-                                    <td>Hopper</td>
-                                    <td>June 22, 2020</td>
-                                    <td>$700</td>
+                                    <td>Williams</td>
+                                    <td>March 19, 2020</td>
+                                    <td>$950</td>
                                     <td>Bitcoin</td>
                                 </tr>
                                 <tr>
-                                    <td>Admond sayhel</td>
+                                    <td>Angel Wilson</td>
                                     <td>May 02, 2020</td>
-                                    <td>$1000</td>
+                                    <td>$1700</td>
                                     <td>Bitcoin</td>
                                 </tr>
                                 <tr>
@@ -350,27 +350,27 @@
                                     <th>Currency</th>
                                 </tr>
                                 <tr>
-                                    <td>Arnold</td>
-                                    <td>Jan 04, 2020</td>
-                                    <td>$1400</td>
+                                    <td>James</td>
+                                    <td>June 04, 2020</td>
+                                    <td>$1600</td>
                                     <td>Bitcoin</td>
                                 </tr>
                                 <tr>
-                                    <td>Jhon Abra</td>
-                                    <td>Jan 07, 2020</td>
-                                    <td>$2000</td>
+                                    <td>Peter Jackson</td>
+                                    <td>May 14, 2020</td>
+                                    <td>$2300</td>
                                     <td>Bitcoin</td>
                                 </tr>
                                 <tr>
-                                    <td>Lanisha</td>
-                                    <td>Jan 13, 2020</td>
-                                    <td>$1000</td>
+                                    <td>Nisha</td>
+                                    <td>March 05, 2020</td>
+                                    <td>$8000</td>
                                     <td>Bitcoin</td>
                                 </tr>
                                 <tr>
-                                    <td>Gongales</td>
-                                    <td>Jan 12, 2020</td>
-                                    <td>$900</td>
+                                    <td>Jackson Gabriel</td>
+                                    <td>February 25, 2020</td>
+                                    <td>$4500</td>
                                     <td>Bitcoin</td>
                                 </tr>
                             </table>
@@ -398,7 +398,7 @@
     </div>
 </div>
 <!-- End Banner Area -->
-<!-- Start reviews Area -->
+{{-- <!-- Start reviews Area -->
 <div class="reviews-area fix area-padding">
     <div class="container">
         <div class="row">
@@ -475,7 +475,7 @@
         </div>
     </div>
 </div>
-<!-- End reviews Area -->
+<!-- End reviews Area --> --}}
 <!-- Start FAQ area -->
 <div class="faq-area bg-color area-padding">
     <div class="container">
@@ -483,7 +483,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="section-headline text-center">
                     <h3>Some important FAQ</h3>
-                    <p>Help agencies to define their new business objectives and then create professional software.</p>
+                    <p>Here are popular questions and their respectives replies given.</p>
                 </div>
             </div>
         </div>
@@ -500,16 +500,14 @@
                                         <h4 class="check-title">
                                             <a data-toggle="collapse" class="active" data-parent="#accordion"
                                                 href="index.html#check1">
-                                                <span class="acc-icons"></span>How to successful our mission and vision
+                                                <span class="acc-icons"></span>Why should I invest in Bitcoin
                                             </a>
                                         </h4>
                                     </div>
                                     <div id="check1" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <p>
-                                                When replacing a multi-lined selection of text, the generated dummy text
-                                                maintains the amount of lines. When replacing a selection of text within
-                                                a single line, the amount of words is roughly being maintained.
+                                                Bitcoin’s protocol limits it to 21 million coins in total, which gives it scarcity, and therefore potentially gives it value… if there is demand for it. There is no central authority that can unilaterally change that limit;
                                             </p>
                                         </div>
                                     </div>
@@ -520,16 +518,14 @@
                                     <div class="panel-heading">
                                         <h4 class="check-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="index.html#check2">
-                                                <span class="acc-icons"></span>Clients satisfaction make company Value.
+                                                <span class="acc-icons"></span>Is Bitcoin a Scam.
                                             </a>
                                         </h4>
                                     </div>
                                     <div id="check2" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                When replacing a multi-lined selection of text, the generated dummy text
-                                                maintains the amount of lines. When replacing a selection of text within
-                                                a single line, the amount of words is roughly being maintained.
+                                                Initially most clients had their doubts about the emergence of cryptocurrency, and the strange fact that it is not controlled by a single body. 7years ago, those having 5 BTC are now major millionaires, having businesses and investments in places.
                                             </p>
                                         </div>
                                     </div>
@@ -540,24 +536,21 @@
                                     <div class="panel-heading">
                                         <h4 class="check-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="index.html#check3">
-                                                <span class="acc-icons"></span>World class creative design and
-                                                development firm.
+                                                <span class="acc-icons"></span>Should I Trust This Platform?
                                             </a>
                                         </h4>
                                     </div>
                                     <div id="check3" class="panel-collapse collapse ">
                                         <div class="panel-body">
                                             <p>
-                                                When replacing a multi-lined selection of text, the generated dummy text
-                                                maintains the amount of lines. When replacing a selection of text within
-                                                a single line, the amount of words is roughly being maintained.
+                                                Same way bitcoin was a probability initially, but now everyone is hopping on the ride seeing it is a promising one. Trust us to invest and issue your profits weekly.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End Panel Default -->
                                 <!-- Panel Default -->
-                                <div class="panel panel-default">
+                                {{-- <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="check-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="index.html#check4">
@@ -574,7 +567,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- End Panel Default -->
                             </div>
                         </div>

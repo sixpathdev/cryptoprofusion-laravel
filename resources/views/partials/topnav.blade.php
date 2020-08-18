@@ -16,8 +16,11 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="text-white float-right">
-                    <span style="font-size: 18px;">Holla, </span>
+                <div class="text-white float-right mr-3">
+                    <span class="mr-2">
+                    <img src="{{$user->photo}}" alt="P" class="img-fluid rounded-circle" width="35px" height="35px" />
+                    </span>
+                    <span style="font-size: 18px;">Hi, </span>
                     <span class="font-weight-bold" style="font-size: 20px;">{{ explode(' ', ucwords($user->fullname))[0] }}</span>
                 </div>
             </div>

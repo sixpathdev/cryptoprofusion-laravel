@@ -31,11 +31,11 @@
                     <div class="login-form">
                         <h4 class="login-title">LOGIN</h4>
                         <div class="row">
-                            @if (session("error"))
-                            <div class="alert alert-danger" role="alert">{{ session("error") }}</div>
-                            @endif
                             @if (session("success"))
                             <div class="alert alert-success" role="alert">{{ session("success") }}</div>
+                            @endif
+                            @if (session("error"))
+                            <div class="alert alert-danger" role="alert">{{ session("error") }}</div>
                             @endif
                             <form id="contactForm" method="POST" action="/login" class="log-form">
                                 @csrf

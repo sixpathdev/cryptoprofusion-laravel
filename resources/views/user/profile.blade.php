@@ -9,6 +9,7 @@
         <!-- side nav ends -->
         <!-- page content -->
         <div class="col-lg-9 ml-sm-auto col-xl-10 pl-3 pr-5 px-xl-5 pt-1">
+            {{-- {{dd($user->wallet->address)}} --}}
             <div class="row pt-md-4">
                 <div class="col-12">
                     <h5 class="text-muted">Profile</h5>
@@ -18,10 +19,10 @@
             <div class="row offset-1 mt-2 mt-lg-5">
                 <div class="col-10">
                     @if (session("error"))
-                    <div class="alert alert-danger" role="alert">{{ session("error") }}</div>
+                    <div class="alert alert-danger text-center" role="alert">{{ session("error") }}</div>
                     @endif
                     @if (session("success"))
-                    <div class="alert alert-success" role="alert">{{ session("success") }}</div>
+                    <div class="alert alert-success text-center" role="alert">{{ session("success") }}</div>
                     @endif
                     <form method="POST" action="/user/profile">
                         @csrf
@@ -29,27 +30,27 @@
                         <div class="form-group mb-4">
                             <label for="fullname" class="text-muted">Full Name</label>
                             <input type="fullname" class="form-control form-control-lg" name="fullname" placeholder="Fullname"
-                                id="fullname" value="{{$user->fullname}}">
+                                id="fullname" value="{{$user->fullname}}" required>
                         </div>
                         <div class="form-row mb-2">
                             <div class="form-group col-md-6">
                                 <label for="email" class="text-muted">Email</label>
                                 <input type="fullname" class="form-control form-control-lg" name="email" placeholder="Email"
-                                    id="email" value="{{$user->email}}">
+                                    id="email" value="{{$user->email}}" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="phone" class="text-muted">Phone</label>
                                 <input type="tel" id="phone" class="form-control form-control-lg" name="phone" placeholder="Phone"
-                                    value="{{$user->phone}}">
+                                    value="{{$user->phone}}" required>
                             </div>
                         </div>
 
                         <div class="form-group mb-4">
                             <label for="phone" class="text-muted">Bitcoin Address</label>
-                            <input type="text" class="form-control form-control-lg" name="address" placeholder="Wallet Address"
-                                value="{{ $user->wallet->address }}">
+                            <input type="text" class="form-control form-control-lg" name="wallet_address" placeholder="Wallet Address"
+                                value="{{ empty($user->wallet->address) ? '' : $user->wallet->address }}" required>
                         </div>
-                        <button type="submit" name="submit" class="btn px-5 py-2 text-white"
+                        <button type="submit" class="btn px-5 py-2 text-white"
                             style="background: #76A140;">Update</button>
                     </form>
                 </div>

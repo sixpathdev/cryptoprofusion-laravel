@@ -56,19 +56,10 @@
                                 <a class="s-menu" href="/login">Login</a>
                             </div>
                             <!-- mainmenu start -->
-                            <nav class="navbar navbar-default">
+                            {{-- <nav class="navbar navbar-default">
                                 <div class="collapse navbar-collapse" id="navbar-example">
                                     <div class="main-menu">
                                         <ul class="nav navbar-nav navbar-right">
-                                            {{-- <li><a class="pages"
-                                                    href="/">Home</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="/">Home
-                                                            01</a></li>
-                                                    <li><a href="http://rockstheme.com/rocks/aievari-live/index-2.html">Home
-                                                            02</a></li>
-                                                </ul>
-                                            </li> --}}
                                             <li><a href="/about-us">About
                                                     us</a></li>
                                             <li><a class="pages" href="index.html#">Pages</a>
@@ -87,7 +78,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </nav>
+                            </nav> --}}
                             <!-- mainmenu end -->
                         </div>
                     </div>
@@ -107,39 +98,8 @@
                         </div>
                         <nav id="dropdown">
                             <ul>
-                                {{-- <li><a class="pages" href="/">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="/">Home 01</a>
-                                        </li>
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/index-2.html">Home 02</a>
-                                        </li>
-                                    </ul>
-                                </li> --}}
-                                <li><a href="/about-us">About us</a></li>
-                                <li><a href="http://rockstheme.com/rocks/aievari-live/investment.html">Investment</a>
-                                </li>
-                                <li><a class="pages" href="index.html#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/team.html">team</a></li>
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/faq.html">FAQ</a></li>
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/review.html">Reviews</a>
-                                        </li>
-                                        <li><a href="/login">Login</a></li>
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/signup.html">Register</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a class="pages" href="index.html#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/blog.html">Blog grid</a>
-                                        </li>
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/blog-sidebar.html">Blog
-                                                Sidebar</a></li>
-                                        <li><a href="http://rockstheme.com/rocks/aievari-live/blog-details.html">Blog
-                                                Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/contact-us">contacts</a></li>
+                                <li><a class="s-menu" href="/register">Login</a></li>
+                                <li><a class="s-menu" href="/login">Login</a></li>
                             </ul>
                         </nav>
                     </div>

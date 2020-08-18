@@ -39,7 +39,7 @@
                                         </div>
                                         <div class="form-group mb-4">
                                             <label for="email">Amount</label>
-                                            <input type="number" name="amount" min="100" max="10000"
+                                            <input type="number" name="amount" min="100" max="100000"
                                                 class="form-control form-control-md" placeholder="Amount" />
                                         </div>
                                         <div class="form-group mb-4">

@@ -554,7 +554,7 @@ div#preloader {
 /*  3. Intro Area
 /*----------------------------------------*/
 .slide-area {
-    background: rgba(0, 0, 0, 0) url(/img/slider/h1.jpg) no-repeat scroll top center / cover;
+    background: rgba(0, 0, 0, 0) url(/img/wallpaper_2.jpeg) no-repeat scroll top center / cover;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -873,7 +873,7 @@ span.users {
  7.Self Area Css
 ----------------------------------------*/
 .self-area {
-    background: url(/img/background/ag1.jpg);
+    background: url(/img/wallpaper_3.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -1041,7 +1041,7 @@ span.users {
 /*  10. banner Area
 /*----------------------------------------*/
 .banner-area {
-    background: rgba(0, 0, 0, 0) url(/img/background/fg.jpg) no-repeat scroll top center / cover;
+    background: rgba(0, 0, 0, 0) url(/img/wallpaper_2.jpeg) no-repeat scroll top center / cover;
     position: relative;
     z-index: 1;
 }

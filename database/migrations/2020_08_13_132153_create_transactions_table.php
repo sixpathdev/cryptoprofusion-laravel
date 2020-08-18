@@ -19,7 +19,7 @@ class CreateTransactionsTable extends Migration
             $table->string('paymentplan');
             // $table->string('currency')->default('bitcoin');
             $table->string('bitcoin_address');
-            $table->string('amount');
+            $table->float('amount');
             // $table->string('paid_currency')->default('USD');
             $table->string('proof');
             $table->string('payment_status');

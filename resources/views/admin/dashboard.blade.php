@@ -16,19 +16,19 @@
             </div>
 
             <div class="row mt-2">
-                {{-- <div class="col-12 mb-2 col-lg-6 mb-lg-0">
-                    <div class="card">
-                        <div class="card-body py-5">
-                            <p class="h2 text-center">Current Plan</p>
-                            <p class="h3 text-center">Bronze</p>
-                        </div>
-                    </div>
-                </div> --}}
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    @if (session("success"))
+                    <div class="alert alert-success text-center" role="alert">{{ session("success") }}</div>
+                    @endif
+                    @if (session("error"))
+                    <div class="alert alert-danger text-center" role="alert">{{ session("error") }}</div>
+                    @endif
+                </div>
                 <div class="col-12 mb-2 col-lg-6 mb-lg-0">
                     <div class="card">
                         <div class="card-body py-5">
                             <p class="h3 text-center">Total Deposited</p>
-                        <p class="h3 text-center">{{ '$'.$total_deposited_amount }}</p>
+                            <p class="h3 text-center">{{ '$'.$total_deposited_amount }}</p>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12 col-lg-12">
-                    <div class="card" style="background: #719248;">
+                    <div class="card">
                         <div class="card-body">
                             <span class="d-block h6 font-weight-bold py-2">DEPOSIT HISTORY</span>
                             <div class="table-responsive">
@@ -70,15 +70,19 @@
                                             </td>
                                             <td>
                                                 @if ($mytransactions[$i]->payment_status == 'pending')
-                                                    <form action="/admin/verifypayment" method="POST">
-                                                        @csrf
-                                                        @method('PUT')
-                                                    <input type="hidden" name="txid" value="{{$mytransactions[$i]->id}}">
-                                                    <input type="hidden" name="userId" value="{{$mytransactions[$i]->userId}}">
-                                                    <button type="submit" name="submit" class="btn bg-primary text-white">Verify</button>
-                                                    </form>
+                                                <form action="/admin/verifypayment" method="POST">
+                                                    @csrf
+                                                    @method('PUT')
+                                                    <input type="hidden" name="txid"
+                                                        value="{{$mytransactions[$i]->id}}">
+                                                    <input type="hidden" name="userId"
+                                                        value="{{$mytransactions[$i]->userId}}">
+                                                    <button type="submit" name="submit"
+                                                        class="btn bg-primary text-white">Verify</button>
+                                                </form>
                                                 @else
-                                                <button type="submit" name="submit" class="btn bg-success text-white">Verified</button>
+                                                <button type="submit" name="submit"
+                                                    class="btn bg-success text-white">Verified</button>
                                                 @endif
                                             </td>
                                             </tr>

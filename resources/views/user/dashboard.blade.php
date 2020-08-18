@@ -8,6 +8,20 @@
         @include('partials.sidenav')
         <!-- side nav ends -->
         <!-- page content -->
+        @if (empty(Auth::user()->wallet->address))
+        <div class="col-lg-9 ml-sm-auto col-xl-10 pl-3 pr-5 px-xl-5 pt-1">
+            <div style="display: flex;justify-content:center;align-items:center;margin-top:130px;">
+            <div class="card" style="width: 30vw">
+                <div class="card-body px-3 py-4">
+                    <span class="d-block text-center">Please update your <b>BITCOIN WALLET ADDRESS</b> before making your first deposit.</span>
+                    <div class="mt-5" style="position: relative;left:100px;">
+                        <a href="/user/profile" class="btn btn-primary mx-auto" style="border-radius: 0px;">Click to Proceed</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        @else
         <div class="col-lg-9 ml-sm-auto col-xl-10 pl-3 pr-5 px-xl-5 pt-1">
             <div class="row pt-md-4">
                 <div class="col-12">
@@ -16,14 +30,6 @@
             </div>
 
             <div class="row mt-2">
-                {{-- <div class="col-12 mb-2 col-lg-6 mb-lg-0">
-                    <div class="card">
-                        <div class="card-body py-5">
-                            <p class="h2 text-center">Current Plan</p>
-                            <p class="h3 text-center">Bronze</p>
-                        </div>
-                    </div>
-                </div> --}}
                 <div class="col-12 mb-2 col-lg-6 mb-lg-0">
                     <div class="card">
                         <div class="card-body py-5">
@@ -32,14 +38,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-12 mb-2 col-lg-6 mb-lg-0">
-                    <div class="card">
-                        <div class="card-body py-5">
-                            <p class="h3 text-center">Investment Profits</p>
-                            <p class="h3 text-center">$0</p>
-                        </div>
-                    </div>
-                </div> --}}
                 <div class="col-12 mb-2 col-lg-6 mb-lg-0">
                     <div class="card">
                         <div class="card-body py-5">
@@ -85,8 +83,10 @@
                 </div>
                 <div class="ml-auto mr-3">{{ $mytransactions->links() }}</div>
             </div>
-
         </div>
+        @endif
+
+        
 
         <!-- Page content ends -->
     </div>

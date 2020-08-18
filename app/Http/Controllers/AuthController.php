@@ -13,55 +13,43 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
-        //start temporay transaction
-        DB::beginTransaction();
-
         try {
             $request->validate([
                 'fullname' => 'required|max:255',
                 'email' => 'required|unique:users',
                 'password' => 'required',
-                'phone' => 'required|unique:users'
+                'phone' => 'required|unique:users',
+                'ref' => 'required',
             ]);
 
             $userExists = User::where('email', $request->input('email'))->first();
 
-            if (!$userExists) {
-                User::create([
-                    'email' => $request->input('email'),
-                    'fullname' => $request->input('fullname'),
-                    'phone' => $request->input('phone'),
-                    'password' => Hash::make($request->get('password')),
-                ]);
-
-                //if operation was successful save changes to database
-                DB::commit();
+            if (!$userExists || $userExists == null) {
+                $newUser = new User;
+                $newUser->email = $request->input('email');
+                $newUser->fullname = $request->input('fullname');
+                $newUser->password = Hash::make($request->input('password'));
+                $newUser->phone = $request->input('phone');
+                $newUser->photo = '/profile/avatar.png';
+                $newUser->save();
 
                 $referred_user = User::where('email', $request->input('email'))->first();
-
-                Referral::create([
-                    'referral' => $request->input('referral'),
-                    'referred' => $referred_user->id,
-                    'bonus' => 0
-                ]);
-
-                // $referral = new Referral();
-                // $referral->referral = $request('referral');
-                // $referral->referred = $referred_user->id;
-                // $referral->save();
+                $ref = new Referral;
+                $ref->referral = $request->input('ref');
+                $ref->referred = $referred_user->id;
+                $ref->bonus = 0;
+                $ref->save();
 
                 $request->session()->flash('success', "Registration successful");
                 return redirect('/login');
+                return back();
             } else {
                 $request->session()->flash('error', "Account already exists!");
                 return back();
             }
         } catch (\Exception $e) {
-
-            //if any operation fails, Thanos snaps finger - user was not created
-            DB::rollBack();
-
-            $request->session()->flash('error', "Account Not created, Try Again!");
+            
+            $request->session()->flash('error', $e);
             return back();
         }
     }
@@ -96,12 +84,12 @@ class AuthController extends Controller
     }
 
     public function logout()
-	{
-		// if (Auth::guard('admin')) {
-		// 	Auth::logout();
-		// return redirect('/admin/login');
-		// }
-		Auth::logout();
-		return redirect('/login');
-	}
+    {
+        // if (Auth::guard('admin')) {
+        // 	Auth::logout();
+        // return redirect('/admin/login');
+        // }
+        Auth::logout();
+        return redirect('/login');
+    }
 }

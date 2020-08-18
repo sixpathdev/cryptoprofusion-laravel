@@ -30,6 +30,9 @@ Route::get('/logout', 'AuthController@logout');
 // });
 
 
+
+Route::get('/getdescendants', 'UserController@getdescendants');
+
 Route::prefix('user')->group(function () {
     Route::get('/dashboard', 'UserController@dashboard');
     Route::get('/profile', 'UserController@profile');
@@ -41,6 +44,7 @@ Route::prefix('user')->group(function () {
 });
 
 Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', 'UserController@admindashboard');
-    Route::put('/verifypayment', 'UserController@verifyClientPayment');
+    Route::get('/dashboard', 'AdminController@admindashboard');
+    Route::get('/payment-proofs', 'AdminController@paymentproofs');
+    Route::put('/verifypayment', 'AdminController@verifyClientPayment');
 });
