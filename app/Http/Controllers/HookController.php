@@ -22,21 +22,19 @@ class HookController extends Controller
             $eachUser = User::where('id', $get_due_users[$i]["userId"])->first();
             $time = $get_due_users[$i]["created_at"]->diffForHumans();
 
-            $bronze = 0.05;
-            $silver = 0.06;
-            $bronze = 0.07;
-            $amount = 0;
+            $percentage = 0.05;
 
             if (explode(' ', $time)[0] == '7' || explode(' ', $time)[0] > '7' && explode(' ', $time)[0] <= '12') {
                 $fullname = $eachUser->fullname;
                 $wallet_address = $eachUser->wallet->address;
-                if ($get_due_users[$i]->paymentplan == 'bronze') {
-                    $amount = (float)$get_due_users[$i]->to_amount * $bronze;
-                } elseif ($get_due_users[$i]->paymentplan == 'silver') {
-                    $amount = (float)$get_due_users[$i]->to_amount * $silver;
-                } elseif ($get_due_users[$i]->paymentplan == 'gold') {
-                    $amount = (float)$get_due_users[$i]->to_amount * $bronze;
-                }
+                $amount = (float)$get_due_users[$i]->to_amount * $percentage;
+                // if ($get_due_users[$i]->paymentplan == 'bronze') {
+                //     $amount = (float)$get_due_users[$i]->to_amount * $bronze;
+                // } elseif ($get_due_users[$i]->paymentplan == 'silver') {
+                //     $amount = (float)$get_due_users[$i]->to_amount * $silver;
+                // } elseif ($get_due_users[$i]->paymentplan == 'gold') {
+                //     $amount = (float)$get_due_users[$i]->to_amount * $bronze;
+                // }
                 $due_on = $time;
 
                 try {
@@ -45,7 +43,7 @@ class HookController extends Controller
 
                     $payment = new Duepayment();
                     $payment->fullname = $fullname;
-                    $payment->plan = $get_due_users[$i]->paymentplan;
+                    $payment->plan = 'Nil';
                     $payment->wallet_address = $wallet_address;
                     $payment->amount_to_pay = $amount;
                     $payment->status = 'pending';

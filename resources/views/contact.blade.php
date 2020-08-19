@@ -10,7 +10,8 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="topbar-left">
                         <ul>
-                            <li><a href="index.html#"><i class="fa fa-envelope"></i> support@cryptoprofusion.com</a></li>
+                            <li><a href="index.html#"><i class="fa fa-envelope"></i> support@cryptoprofusion.com</a>
+                            </li>
                             <li><a href="index.html#"><i class="fa fa-phone"></i>+1 312-883-3771</a></li>
                         </ul>
                     </div>
@@ -42,12 +43,10 @@
                         <div class="col-md-3 col-sm-3">
                             <div class="logo">
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll white-logo"
-                                    href="/">
+                                <a class="navbar-brand page-scroll white-logo" href="/">
                                     <img src="img/logo/logo3.png" alt="">
                                 </a>
-                                <a class="navbar-brand page-scroll black-logo"
-                                    href="/">
+                                <a class="navbar-brand page-scroll black-logo" href="/">
                                     <img src="img/logo/logo.png" alt="">
                                 </a>
                             </div>
@@ -76,11 +75,9 @@
                                                     us</a></li>
                                             <li><a class="pages" href="index.html#">Pages</a>
                                                 <ul class="sub-menu">
-                                                    <li><a
-                                                            href="/login">Login</a>
+                                                    <li><a href="/login">Login</a>
                                                     </li>
-                                                    <li><a
-                                                            href="/register">Register</a>
+                                                    <li><a href="/register">Register</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -179,7 +176,7 @@
         <div class="row">
             <div class="contact-inner">
                 <!-- Start contact icon column -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-5 col-sm-5 col-xs-12">
                     <div class="contact-icon text-center">
                         <div class="single-icon">
                             <i class="fa fa-mobile"></i>
@@ -191,25 +188,13 @@
                     </div>
                 </div>
                 <!-- Start contact icon column -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-5 col-sm-5 col-xs-12">
                     <div class="contact-icon text-center">
                         <div class="single-icon">
                             <i class="fa fa-envelope-o"></i>
                             <p>
                                 Email : support@cryptoprofusion.com<br>
                                 <span>Web: www.cryptoprofusion.com</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Start contact icon column -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="contact-icon text-center">
-                        <div class="single-icon">
-                            <i class="fa fa-map-marker"></i>
-                            <p>
-                                Location : Newyork city<br>
-                                <span>23 house/3 Road</span>
                             </p>
                         </div>
                     </div>
@@ -226,32 +211,39 @@
             </div>
             <!-- Start Left contact -->
             <div class="col-md-6 col-sm-6 col-xs-12">
+                @if (session("success"))
+                <div class="alert alert-success" role="alert">{{ session("success") }}</div>
+                @endif
+                @if (session("error"))
+                <div class="alert alert-danger" role="alert">{{ session("error") }}</div>
+                @endif
                 <div class="contact-form">
                     <div class="row">
-                        <form id="contactForm" method="POST"
-                            action="/contact-us" class="contact-form">
+                        <form id="contactFormNull" method="POST" action="/contactsupport" class="contact-form">
+                            @csrf
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" id="name" class="form-control" placeholder="Name" required
-                                    data-error="Please enter your name">
+                                <input type="text" id="name" class="form-control" name="name" placeholder="Name"
+                                    required data-error="Please enter your name">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="email" class="email form-control" id="email" placeholder="Email" required
-                                    data-error="Please enter your email">
+                                <input type="email" class="email form-control" name="email" id="email"
+                                    placeholder="Email" required data-error="Please enter your email">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required
-                                    data-error="Please enter your message subject">
+                                <input type="text" id="msg_subject" class="form-control" name="subject"
+                                    placeholder="Subject" required data-error="Please enter your message subject">
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <textarea id="message" rows="7" placeholder="Massage" class="form-control" required
-                                    data-error="Write your message"></textarea>
+                                <textarea id="message" rows="7" placeholder="Message" name="message"
+                                    class="form-control" required data-error="Write your message"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                                <button type="submit" id="submit" class="add-btn contact-btn">Send Message</button>
+                                <button type="submit" id="submit" name="submit" class="add-btn contact-btn">Send
+                                    Message</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>

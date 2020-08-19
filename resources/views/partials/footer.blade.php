@@ -46,9 +46,9 @@
     <div class="footer-area-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-12 col-sm-6 col-xs-12">
                     <div class="copyright">
-                        <p>
+                        <p style="text-align: center;">
                             Copyright © {{ date("Y") }}
                             <a href="index.html#">cryptoprofusion</a> All Rights Reserved
                         </p>

@@ -11,7 +11,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <!-- Start Slider content -->
                         <div class="slide-content text-center">
-                            <span class="title2">Invest and Earn Weekly with over 4% Weekly</span>
+                            <span class="title2">Invest and Earn Weekly with over 5% Weekly</span>
                             <div class="layer-1-3">
                                 <a href="/register" class="ready-btn left-btn">Get started</a>
                             </div>
@@ -85,19 +85,19 @@
                     <div class="pri_table_list">
                         <div class="top-price-inner">
                             <div class="rates text-center" style="display: flex;flex-direction:column;align-items:center;">
-                                <span class="users h2" style="color: bronze;">Bronze</span><span class="prices">4%</span>
+                                <span class="users h2" style="color: bronze;">Weekly Payment</span><span class="prices">5%</span>
                             </div>
                         </div>
                         <ol class="pricing-text">
                             <li class="check">Minimum Invest : $150</li>
-                            <li class="check">Maximum Invest : $1500</li>
+                            {{-- <li class="check">Maximum Invest : Topup allowed</li> --}}
                         </ol>
                         <div class="price-btn blue" style="display:flex;justify-content:center;">
                             <a class="blue" href="/login">Deposit</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                {{-- <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="pri_table_list">
                         <div class="top-price-inner">
                             <span class="base">Popular</span>
@@ -132,7 +132,7 @@
                             <a class="blue" href="/login">Deposit</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -235,7 +235,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="row">
                     <div class="work-proses-inner text-center">
-                        <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-md-12 col-sm-4 col-xs-12">
                             <div class="single-proses">
                                 <div class="proses-content">
                                     <div class="proses-icon point-blue">
@@ -243,13 +243,13 @@
                                         <a href="index.html#"><i class="ti-briefcase"></i></a>
                                     </div>
                                     <div class="proses-text">
-                                        <h4>Level 01 instant 30% commission</h4>
+                                        <h4>Instant 5% commision on first payment of your referral</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- End column -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
+                        {{-- <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="single-proses">
                                 <div class="proses-content">
                                     <div class="proses-icon point-orange">
@@ -275,7 +275,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!-- End column -->
                     </div>
                 </div>
@@ -578,7 +578,7 @@
             <!-- End Column -->
             <div class="col-md-5 col-sm-6 col-xs-12">
                 <div class="faq-content">
-                    <h4>Have a any qustion?</h4>
+                    <h4>Have a any question?</h4>
                     <div class="faq-quote">
                         <div class="row">
                             <form id="contactForm" method="POST"

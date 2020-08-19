@@ -39,14 +39,15 @@
                     <!-- column end -->
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="about-content">
-							<h3>A Investment firm is a business of one or more experts that provides professional investment service</h3>
-                            <p>The phrasal sequence of the Lorem Ipsum text is now so widespread and commonplace that many DTP programmes can generate dummy text using the starting sequence "Lorem ipsum". Fortunately, the phrase 'Lorem Ipsum' is now recognized by electronic pre-press systems and, when found, an alarm can be raised.</p>
+                            <h5>Our intention is to simplify this to the understanding of even a 10-year-old. So, to smoothly do this, we will be discussing Cryptoprofusion under these subheadings;</h5>
                             <div class="about-details">
                                 <ul class="marker-list">
-									<li>The phrasal sequence of the Lorem Ipsum text.</li>
-									<li>ducimus adipisci voluptas consectetur adipisicing.</li>
-									<li>consectetur adipisicing elit praesentium maxime.</li>
-									<li>programmes can generate dummy text using..</li>
+									<li>Cryptoprofusion: Company Overview</li>
+									<li>What is Bluekey Network and how does it work?</li>
+									<li>How is the 10% weekly ROI Generated?</li>
+									<li>Accepted Countries and Requirements</li>
+									<li>Are they Registered and Regulated?</li>
+									<li>How do I register?</li>
 								</ul>
                             </div>
                         </div>
@@ -56,8 +57,103 @@
             </div>
         </div>
         <!-- about-area end -->
-        <!-- Start About Area -->
         <div class="about-feature-area bg-color area-padding-2">
+            <div class="container">
+                <!-- end Row -->
+                <div class="row">
+                    <div class="about-mission">
+                        <!-- Start column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="mission-about">
+                                <div class="mission-icon">
+                                    <i class="flaticon-004-bar-chart"></i>
+                                </div>
+                                <div class="mission-text">
+                                    <h5>1. Cryptoprofusion: Company Overview</h5>
+                                    <p>Cryptoprofusion is a robust multi-dimensional crypto-financial platform whose aim is to give individuals as well as corporations access to life-transforming financial services using the Ethereum Blockchain.</p>
+                                    <p>Our exparts where able to develop a trading bot that trades Forex without fail. We called this the Cryptoprofusion Breakthrough Trading System (CBTS).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="mission-about">
+                                <div class="mission-icon">
+                                    <i class="flaticon-023-management"></i>
+                                </div>
+                                <div class="mission-text">
+                                    <h5>2. How does it work?</h5>
+                                    <p>Investors are paid 5% of their investment amount in USD weekly for 6 months. At the end of the 6th month, 100% of the initial invested amount will also be sent to the investor.</p>
+                                    <p>To further clarify this, if you invest $1000, you will receive $50 weekly for 6 months i.e a total of $1,200 at the end of the 6th month, you will also receive $1000 which is 100% of your investment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                        <!-- Start column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="mission-about">
+                                <div class="mission-icon">
+                                    <i class="flaticon-023-management"></i>
+                                </div>
+                                <div class="mission-text">
+                                    <h5>3. How is the 5% Weekly Return Generated?</h5>
+                                    <p>The investors’ capital is used to trade Forex using the Cryptoprofusion Breakthrough Trading Bot as explained above. The bot over the past 3 year recorded a 99.9% success rate. The truth is that CBTS generate almost a 50% of investment monthly and investor are paid 20% of there investment monthly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                        <!-- Start column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="mission-about">
+                                <div class="mission-icon">
+                                    <i class="flaticon-023-management"></i>
+                                </div>
+                                <div class="mission-text">
+                                    <h5>4. Is Bluekey Registered and Regulated?</h5>
+                                    <p>The BlueKey is fully registered and it is currently working on obtaining its license for its Forex Brokerage platform.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                        <!-- Start column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="mission-about">
+                                <div class="mission-icon">
+                                    <i class="flaticon-023-management"></i>
+                                </div>
+                                <div class="mission-text">
+                                    <h5>7. Can I top up my investment at anytime?</h5>
+                                    <p>Yes, you can top up your investment at anytime and as many times as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                        <!-- Start column -->
+                        <div class="col-md-10 col-sm-10 col-xs-12" style="margin-left: 7%">
+                            <div class="mission-about">
+                                <div class="mission-icon">
+                                    <i class="flaticon-023-management"></i>
+                                </div>
+                                <div class="mission-text">
+                                    <h5>Very simple registration</h5>
+                                    <p>Register and Verify your account by uploading a copy of any of the below identification cards;</p>
+                                        <p>International Passport.</p>
+                                        <p>Drivers License</p>
+                                        <p>Staff Identification. Or any I.D with your photo and detailed information. (make sure your ID file size is below 2mb). After upload, you get verified in less than 12 hours.</p>
+                                        <p>Update your profile with the bitcoin wallet address where you will send your Investment from as well as receive your weekly ROI.</p>
+                                        <p>After updating profile, you are then free to start investing as much as you can.</p>
+                                        <p>On every payment made by you to the wallet address specified, you are required to upload a proof of payment which after verified within 5 hours of payment, your payment would be approved.</p>
+                                        <p><b>Now relax as your weekly earning will be sent to you every week.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End column -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start About Area -->
+        {{-- <div class="about-feature-area bg-color area-padding-2">
             <div class="container">
                 <!-- end Row -->
                 <div class="row">
@@ -102,79 +198,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End About Area -->
-        <!-- Start Banner Area -->
-        <div class="banner-area area-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="banner-all area-80 text-center">
-                            <div class="banner-content">
-                                <h3>Our worldwide integration partner work with long time relationship </h3>
-                                <a class="banner-btn" href="about.html#">Open new account</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Banner Area -->
-        <!-- Start Feature Area -->
-        <div class="feature-area bg-color fix area-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="feature-content">
-                            <div class="feature-images">
-                                <img src="img/feature/f1.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="feature-text">
-                            <h3>Spread the word and earn more</h3>
-						    <p>You found a tool like no other, and your friends want to hear about it! You can sign up for our refer a friend program in the app, and every time you refer a friend, we’ll give you each $5 to invest.</p>
-                            
-                            <a class="feature-btn" href="/register">Get started now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row margin-row">
-                    <div class="col-md-6 col-sm-6 hidden-xs">
-                        <div class="feature-text">
-                            <h3>Risk free investment system of our policy</h3>
-						    <p>Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create</p>
-                            <ul>
-                               <li><a href="about.html#">Innovation idea latest business tecnology</a></li>
-                                <li><a href="about.html#">Digital content marketing online clients plateform</a></li>
-                                <li><a href="about.html#">Safe secure services for you online email account</a></li>
-                            </ul>
-                            <a class="feature-btn" href="about.html#">Learn about more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="overview-images">
-                           <canvas id="bissChart" width="300" height="240"></canvas>
-                        </div>
-				    </div>
-				    <!-- End Column -->
-                    <div class="hidden-md hidden-lg hidden-sm col-xs-12">
-                        <div class="feature-text">
-                            <h3>Easily grow your business earn more money</h3>
-						    <p>Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create</p>
-                            <ul>
-                               <li><a href="about.html#">Innovation idea latest business tecnology</a></li>
-                                <li><a href="about.html#">Digital content marketing online clients plateform</a></li>
-                                <li><a href="about.html#">Safe secure services for you online email account</a></li>
-                            </ul>
-                            <a class="feature-btn" href="about.html#">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Feature Area -->
 
 @include('partials.footer')
 @include('partials.scripts')
