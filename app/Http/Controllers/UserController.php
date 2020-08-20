@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Duepayment;
+use App\Idcard;
 use App\Investmentprofit;
 use App\Paymentplan;
 use App\Referral;
@@ -29,7 +30,7 @@ class UserController extends Controller
             $total_deposited_amount += $a;
         }
 
-        $referral_bonus = Referral::where('referral', Auth::id())->pluck('bonus');
+        $referral_bonus = Referral::where('referral_id', Auth::id())->pluck('bonus');
         $total_referral_amount = 0;
         for ($i = 0; $i < count($referral_bonus); $i++) {
             $a = (int) $referral_bonus[$i];
@@ -137,6 +138,34 @@ class UserController extends Controller
     {
         $transactions = Transaction::all();
         return view('admin.proofs', compact('transactions'));
+    }
+
+    public function uploadid(Request $request)
+    {
+        $request->validate([
+            'valid_id'  => 'required|mimes:png,jpeg,jpg|max:2048',
+        ]);
+
+        try {
+            if ($file = $request->file('valid_id')) {
+                $destinationPath = 'uploaded-ids/'; // upload path
+                $filepath = date('Y-m-d-s') . "-id." . $file->getClientOriginalExtension();
+                $file->move($destinationPath, $filepath);
+                $photo = $destinationPath . $filepath;
+                
+                $idcard = new Idcard;
+                $idcard->userId = Auth::user()->id;
+                $idcard->name = Auth::user()->name;
+                $idcard->idurl = $photo;
+                $idcard->save();
+
+                $request->session()->flash('success', "Identity card uploaded successfully");
+                return back();
+            }
+        } catch (Exception $e) {
+            $request->session()->flash('error', "Error uploading card");
+            return back();
+        }
     }
 
     public function getdescendants()

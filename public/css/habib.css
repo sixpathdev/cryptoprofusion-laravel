@@ -4,25 +4,25 @@
 
 .card {
     border-radius: 0px;
-    border: 1px solid #76A140;
-    background-color: #76A140;
+    border: 1px solid #76a140;
+    background-color: #76a140;
     color: #fff;
 }
 
-textarea:focus, 
+textarea:focus,
 button.btn:focus,
-textarea.form-control:focus, 
-input.form-control:focus, 
-input[type=text]:focus, 
-input[type=password]:focus, 
-input[type=email]:focus, 
-input[type=number]:focus, 
-[type=text].form-control:focus, 
-[type=password].form-control:focus, 
-[type=email].form-control:focus, 
-[type=tel].form-control:focus, 
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
 [contenteditable].form-control:focus {
-  box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 ul,
@@ -41,7 +41,7 @@ li {
 }
 
 .top__nav__wrapper {
-    background: #76A140;
+    background: #76a140;
     box-shadow: 0px 4px 12px rgba(163, 163, 163, 0.25);
     z-index: 1;
     border-left: 1px solid #fff;
@@ -115,7 +115,7 @@ li {
 }
 
 .modal-body button[data-dismiss="modal"] {
-    background: #EEEEEE;
+    background: #eeeeee;
     border: 0.586451px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -151,6 +151,7 @@ li {
     }
 }
 
+
 ul,
 li {
     margin: 0;
@@ -162,7 +163,8 @@ a {
     text-decoration: none !important;
 }
 
-input.form-control, button.btn {
+input.form-control,
+button.btn {
     border-radius: 0px;
 }
 
@@ -173,7 +175,7 @@ input.form-control, button.btn {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #76A140;
+    background-color: #76a140;
     border-right: 1px solid #fff;
     overflow-x: hidden;
 }

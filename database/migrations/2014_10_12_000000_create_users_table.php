@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('type')->default('user');
             $table->bigInteger('phone')->unique();
             $table->string('photo');
+            $table->string('verifycode');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->foreign('user_id')->references('id')->on('users');

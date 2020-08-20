@@ -27,9 +27,13 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', function () {
     return view('contact');
 });
+Route::get('/forgotpassword', function () {
+    return view('auth.forgotpassword');
+});
 Route::get('/register', "AuthController@registerForm");
 Route::post('/login', 'AuthController@login');
 Route::post('/register', 'AuthController@register');
+Route::post('/forgotpassword', 'AuthController@forgotpassword');
 Route::get('/logout', 'AuthController@logout');
 Route::post('/contactsupport', 'ContactController@contactsupport');
 
@@ -47,10 +51,14 @@ Route::prefix('user')->group(function () {
     Route::get('/payment-plan', 'UserController@paymentplanPage');
     Route::get('/plan/{plan_name}', 'UserController@paymentForm');
     Route::post('/uploadproof', 'UserController@uploadproof');
+    Route::post('/uploadid', 'UserController@uploadid');
+
 });
 
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', 'AdminController@admindashboard');
     Route::get('/payment-proofs', 'AdminController@paymentproofs');
+    Route::get('/id-proofs', 'AdminController@idproofs');
     Route::put('/verifypayment', 'AdminController@verifyClientPayment');
+    Route::put('/verifyUserId', 'AdminController@verifyUserId');
 });

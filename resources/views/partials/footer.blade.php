@@ -34,8 +34,9 @@
                         <div class="footer-head">
                             <h4>Information</h4> 
                             <div class="footer-contacts">
-                                <p><span>Tel :</span> <small>+1 312-883-3771</small></p>
-                                <p><span>Email :</span> <small>support@cryptoprofusion.com</small></p>
+                                <p><span><img src="/img/phone-icon.png" class="img-fluid" width="28px" height="28px" /></span> <small style="color:#76A140;">+1 312-883-3771</small></p>
+                                <p><span><img src="/img/instagram-icon.png" class="img-fluid" width="28px" height="28px" /></span> <a href="https://www.instagram.com/cryptoprofusion"><small style="color:#76A140;">@cryptoprofusion</small></a></p>
+                                <p><span><img src="/img/mail-icon.png" class="img-fluid" width="28px" height="28px" /></span><small style="color:#76A140;">support@cryptoprofusion.com</small></p>
                             </div>
                         </div>
                     </div>

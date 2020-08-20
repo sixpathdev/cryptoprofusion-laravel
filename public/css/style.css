@@ -56,6 +56,20 @@
 html, body {
 	height: 100%;
 }
+.pricing-content {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+/* .pricing-content-item {
+    margin-left: 25% !important;
+} */
+@media screen and (max-width: 500px) {
+    .pricing-content {
+        flex-direction: column !important;
+    }
+}
 .floatleft {
 	float:left;
 }

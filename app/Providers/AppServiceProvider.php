@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer(['user.dashboard', 'admin.proofs', 'admin.dashboard', 'user.payment', 'user.profile', 'user.payment-plan'], function($view){
+        View::composer(['user.dashboard', 'admin.proofs', 'admin.uploaded-ids', 'admin.dashboard', 'user.payment', 'user.profile', 'user.payment-plan'], function($view){
             $user = Auth::user();
             $view->with('user', $user);
         });

@@ -1,12 +1,13 @@
 <div class="col-lg-3 col-xl-2 d-md-block sicky-top">
     <div class="sidenav sidenav__unactive" id="sideNav">
         <div class="pl-3 pt-3">
-            <h5 class="side-header-text text-white font-weight-bold">CRYPTOPROFUSION</h5>
+            <img src="/img/logo/logo3.png" class="img-fluid" />
         </div>
         <ul class="sidenav_links d-sm text-center">
-            @if (Auth::user()->email == 'admin@gmail.com')
+            @if (Auth::user()->type == 'superadmin')
             <li class="my-1"><a style="font-size: 14px;" href="/admin/dashboard">Admin Dashboard</a></li>
             <li class="my-1"><a style="font-size: 14px;" href="/admin/payment-proofs">Payment proofs</a></li>
+            <li class="my-1"><a style="font-size: 14px;" href="/admin/id-proofs">Uploaded Ids</a></li>
             @endif
             <li class="my-1"><a style="font-size: 14px;" href="/user/dashboard">Dashboard</a></li>
             <li class="my-1"><a style="font-size: 14px;" href="/user/payment-plan">Make Payment</a></li>

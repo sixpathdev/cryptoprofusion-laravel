@@ -74,23 +74,43 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="section-headline text-center">
                     <h3>Investment Plans</h3>
-                    <p>You receive the percentage on choice of plan weekly for 6months and after 6months you get back your capital.</p>
+                    <p>You receive the percentage on choice of plan weekly for 6months and after 6months you get back
+                        your capital.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="pricing-content" style="display: flex;flex-direction:row;justify-content:center;">
-                
-                <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="pricing-content">
+                <div class="pricing-content-item col-md-3 col-sm-6 col-xs-12">
                     <div class="pri_table_list">
                         <div class="top-price-inner">
-                            <div class="rates text-center" style="display: flex;flex-direction:column;align-items:center;">
-                                <span class="users h2" style="color: bronze;">Weekly Payment</span><span class="prices">5%</span>
+                            <div class="rates text-center"
+                                style="display: flex;flex-direction:column;align-items:center;">
+                                <span class="users h2" style="color: silver;">Silver</span><span
+                                    class="prices">5%</span>
                             </div>
                         </div>
                         <ol class="pricing-text">
-                            <li class="check">Minimum Invest : $150</li>
-                            {{-- <li class="check">Maximum Invest : Topup allowed</li> --}}
+                            <li class="check">Minimum Invest : $300</li>
+                            <li class="check">Maximum Invest : $40,000</li>
+                        </ol>
+                        <div class="price-btn blue" style="display:flex;justify-content:center;">
+                            <a class="blue" href="/login">Deposit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="pri_table_list">
+                        <div class="top-price-inner">
+                            <span class="base">Popular</span>
+                            <div class="rates" style="display: flex;flex-direction:column;align-items:center;">
+                                <span class="users h2" style="color: gold;">Gold</span>
+                                <span class="prices">7%</span>
+                            </div>
+                        </div>
+                        <ol class="pricing-text">
+                            <li class="check">Minimum Invest : $45,000</li>
+                            <li class="check">Maximum Invest : $80,000</li>
                         </ol>
                         <div class="price-btn blue" style="display:flex;justify-content:center;">
                             <a class="blue" href="/login">Deposit</a>
@@ -98,24 +118,6 @@
                     </div>
                 </div>
                 {{-- <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="pri_table_list">
-                        <div class="top-price-inner">
-                            <span class="base">Popular</span>
-                            <div class="rates" style="display: flex;flex-direction:column;align-items:center;">
-                                <span class="users h2" style="color: silver;">Silver</span>
-                                <span class="prices">5%</span>
-                            </div>
-                        </div>
-                        <ol class="pricing-text">
-                            <li class="check">Minimum Invest : $2000</li>
-                            <li class="check">Maximum Invest : $9000</li>
-                        </ol>
-                        <div class="price-btn blue" style="display:flex;justify-content:center;">
-                            <a class="blue" href="/login">Deposit</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="pri_table_list">
                         <span class="base">Best sale</span>
                         <div class="top-price-inner">
@@ -151,54 +153,54 @@
         </div>
         <div class="row">
             <div class="support-all">
-                </div>
-                <!-- Start About -->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="support-services ">
-                        <a class="support-images" href="index.html#"><i class="flaticon-036-security"></i></a>
-                        <div class="support-content">
-                            <h4>Secure investment</h4>
-                            <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                                define their new business objectives and then create</p>
-                        </div>
+            </div>
+            <!-- Start About -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="support-services ">
+                    <a class="support-images" href="index.html#"><i class="flaticon-036-security"></i></a>
+                    <div class="support-content">
+                        <h4>Secure investment</h4>
+                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
+                            define their new business objectives and then create</p>
                     </div>
                 </div>
-                <!-- Start services -->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="support-services">
-                        <a class="support-images" href="index.html#"><i class="flaticon-042-wallet"></i></a>
-                        <div class="support-content">
-                            <h4>Instant withdrawal</h4>
-                            <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                                define their new business objectives and then create</p>
-                        </div>
+            </div>
+            <!-- Start services -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="support-services">
+                    <a class="support-images" href="index.html#"><i class="flaticon-042-wallet"></i></a>
+                    <div class="support-content">
+                        <h4>Instant withdrawal</h4>
+                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
+                            define their new business objectives and then create</p>
                     </div>
                 </div>
-                <!-- Start services -->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="support-services ">
-                        <a class="support-images" href="index.html#"><i class="flaticon-032-report"></i></a>
-                        <div class="support-content">
-                            <h4>Verified security</h4>
-                            <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                                define their new business objectives and then create</p>
-                        </div>
+            </div>
+            <!-- Start services -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="support-services ">
+                    <a class="support-images" href="index.html#"><i class="flaticon-032-report"></i></a>
+                    <div class="support-content">
+                        <h4>Verified security</h4>
+                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
+                            define their new business objectives and then create</p>
                     </div>
                 </div>
-                <!-- Start services -->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="support-services">
-                        <a class="support-images" href="index.html#"><i class="flaticon-024-megaphone"></i></a>
-                        <div class="support-content">
-                            <h4>Live customer support</h4>
-                            <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                                define their new business objectives and then create</p>
-                        </div>
+            </div>
+            <!-- Start services -->
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="support-services">
+                    <a class="support-images" href="index.html#"><i class="flaticon-024-megaphone"></i></a>
+                    <div class="support-content">
+                        <h4>Live customer support</h4>
+                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
+                            define their new business objectives and then create</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- End Support-service Area -->
 <!-- Start Self-area -->
@@ -210,7 +212,8 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="self-content">
-                    <h5>Provides weekly profits while when investment is made with us. We help your satele to future life and then create the road. Grow Money speedly without
+                    <h5>Provides weekly profits while when investment is made with us. We help your satele to future
+                        life and then create the road. Grow Money speedly without
                         any risk. </h5>
                     <span class="talk-text">- Zayn</span>
                 </div>
@@ -507,7 +510,10 @@
                                     <div id="check1" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <p>
-                                                Bitcoin’s protocol limits it to 21 million coins in total, which gives it scarcity, and therefore potentially gives it value… if there is demand for it. There is no central authority that can unilaterally change that limit;
+                                                Bitcoin’s protocol limits it to 21 million coins in total, which gives
+                                                it scarcity, and therefore potentially gives it value… if there is
+                                                demand for it. There is no central authority that can unilaterally
+                                                change that limit;
                                             </p>
                                         </div>
                                     </div>
@@ -525,7 +531,10 @@
                                     <div id="check2" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <p>
-                                                Initially most clients had their doubts about the emergence of cryptocurrency, and the strange fact that it is not controlled by a single body. 7years ago, those having 5 BTC are now major millionaires, having businesses and investments in places.
+                                                Initially most clients had their doubts about the emergence of
+                                                cryptocurrency, and the strange fact that it is not controlled by a
+                                                single body. 7years ago, those having 5 BTC are now major millionaires,
+                                                having businesses and investments in places.
                                             </p>
                                         </div>
                                     </div>
@@ -543,7 +552,9 @@
                                     <div id="check3" class="panel-collapse collapse ">
                                         <div class="panel-body">
                                             <p>
-                                                Same way bitcoin was a probability initially, but now everyone is hopping on the ride seeing it is a promising one. Trust us to invest and issue your profits weekly.
+                                                Same way bitcoin was a probability initially, but now everyone is
+                                                hopping on the ride seeing it is a promising one. Trust us to invest and
+                                                issue your profits weekly.
                                             </p>
                                         </div>
                                     </div>
@@ -581,8 +592,7 @@
                     <h4>Have a any question?</h4>
                     <div class="faq-quote">
                         <div class="row">
-                            <form id="contactForm" method="POST"
-                                action="/contact-us" class="contact-form">
+                            <form id="contactForm" method="POST" action="/contact-us" class="contact-form">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" id="name" class="form-control" placeholder="Name" required
                                         data-error="Please enter your name">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Idcard;
 use App\Referral;
 use App\Transaction;
 use Illuminate\Http\Request;
@@ -36,7 +37,7 @@ class AdminController extends Controller
         $user_id = $request->input('userId');
 
         $isFirstPayment = Transaction::where('userId', $user_id)->get();
-
+        
         if ($isFirstPayment->count() == 1) {
             $amount = (int)$isFirstPayment[0]->amount;
             $fivepercent = $amount * 0.05;
@@ -45,7 +46,14 @@ class AdminController extends Controller
             $referral->save();
 
             $transaction = Transaction::where('id', $client_id)->where('verified', 0)->first();
-            $transaction->payment_status = 'success';
+            $transaction->payment_status = 'verified';
+            $transaction->verified = 1;
+            $transaction->save();
+
+            return back()->with('success', 'User payment verified successfully');
+        } else {
+            $transaction = Transaction::where('id', $client_id)->where('verified', 0)->first();
+            $transaction->payment_status = 'verified';
             $transaction->verified = 1;
             $transaction->save();
 
@@ -57,5 +65,20 @@ class AdminController extends Controller
     {
         $paymentproofs = Transaction::where('verified', 'paid')->paginate(10);
         return view('admin.proofs', compact('paymentproofs'));
+    }
+
+    public function idproofs()
+    {
+        $idproofs = Idcard::where('verified', 'false')->paginate(10);
+        return view('admin.uploaded-ids', compact('idproofs'));
+    }
+
+    public function verifyUserId(Request $request)
+    {
+        $user_id_card = Idcard::where('userId', $request->input('userId'))->first();
+        $user_id_card->verified = true;
+        $user_id_card->save();
+
+        return back()->with('success', 'User verified successfully');
     }
 }

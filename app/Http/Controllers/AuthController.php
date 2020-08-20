@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Newpassword;
 use App\Referral;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 class AuthController extends Controller
 {
@@ -35,8 +37,8 @@ class AuthController extends Controller
 
                 $referred_user = User::where('email', $request->input('email'))->first();
                 $ref = new Referral;
-                $ref->referral = $request->input('ref');
-                $ref->referred = $referred_user->id;
+                $ref->referral_id = $request->input('ref');
+                $ref->user_id = $referred_user->id;
                 $ref->bonus = 0;
                 $ref->save();
 
@@ -48,7 +50,7 @@ class AuthController extends Controller
                 return back();
             }
         } catch (\Exception $e) {
-            
+
             $request->session()->flash('error', $e);
             return back();
         }
@@ -85,11 +87,25 @@ class AuthController extends Controller
 
     public function logout()
     {
-        // if (Auth::guard('admin')) {
-        // 	Auth::logout();
-        // return redirect('/admin/login');
-        // }
         Auth::logout();
         return redirect('/login');
+    }
+
+    public function forgotpassword(Request $request)
+    {
+        $email = $request->input('email');
+        $userExists = User::where('email', $email)->first();
+        if (!$userExists) {
+            $request->session()->flash('error', "Failed to reset password");
+            return back();
+        } else {
+            $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzAZENDIKIDHYGTGYHJK';
+            $verifycode = substr(str_shuffle($permitted_chars), 0, 8);
+            $userExists->verifycode = $verifycode;
+            $userExists->save();
+            Mail::to('support@cryptoprofusion.com')->send(new Newpassword($email, $verifycode));
+            $request->session()->flash('success', "Your new password has been sent to your email");
+            return redirect('/login');
+        }
     }
 }

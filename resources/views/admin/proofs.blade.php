@@ -21,24 +21,29 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">S/N</th>
-                                    <th scope="col">Wallet Address</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Action</th>
+                                    <th scope="col" class="text-muted" style="font-weight: 400;">S/N</th>
+                                    <th scope="col" class="text-muted" style="font-weight: 400;">Wallet Address</th>
+                                    <th scope="col" class="text-muted" style="font-weight: 400;">Amount</th>
+                                    <th scope="col" class="text-muted" style="font-weight: 400;">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @if (count($paymentproofs) > 0)
                                 @for ($i = 0; $i < count($paymentproofs); $i++) 
-                                    <tr>
-                                        <th scope="row">{{$i+1}}</th>
-                                        <td>{{$paymentproofs[$i]->bitcoin_address}}</td>
-                                        <td>{{$paymentproofs[$i]->amount}}</td>
-                                        <td><a href="{{'../'.$paymentproofs[$i]->proof}}" target="_blank" class="text-primary">View</a></td>
-                                    </tr>
-                                    @endfor
+                                <tr>
+                                    <th scope="row">{{$i+1}}</th>
+                                    <td>{{$paymentproofs[$i]->bitcoin_address}}</td>
+                                    <td>{{$paymentproofs[$i]->amount}}</td>
+                                    <td><a href="{{'../'.$paymentproofs[$i]->proof}}" target="_blank" class="text-primary">View</a></td>
+                                </tr>
+                                @endfor
+                                @else
+                                <tr><td><div class="text-center text-muted">No uploaded id yet</div></td></tr>
+                                @endif
                             </tbody>
                         </table>
                     </div>
+                    <div class="ml-auto mr-3">{{ $paymentproofs->links() }}</div>
                 </div>
             </div>
 

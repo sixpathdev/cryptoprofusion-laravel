@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReferralsTable extends Migration
+class CreateIdcardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateReferralsTable extends Migration
      */
     public function up()
     {
-        Schema::create('referrals', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('referral_id');
-            $table->unsignedBigInteger('user_id');
-            $table->float('bonus');
+        Schema::create('idcards', function (Blueprint $table) {
+            $table->id();
+            $table->string('userId');
+            $table->string('name');
+            $table->string('idurl');
+            $table->boolean('verified')->default(false);
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -30,6 +30,6 @@ class CreateReferralsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('referrals');
+        Schema::dropIfExists('idcards');
     }
 }

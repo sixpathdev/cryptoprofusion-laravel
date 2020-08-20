@@ -17,10 +17,10 @@
             <div class="row offset-3 mt-2 mt-lg-3">
                 <div class="col-8">
                     @if (session("error"))
-                    <div class="alert alert-danger" role="alert"><small>{{ session("error") }}</small></div>
+                    <div class="alert alert-danger text-center" role="alert"><small>{{ session("error") }}</small></div>
                     @endif
                     @if (session("success"))
-                    <div class="alert alert-success" role="alert"><small>{{ session("success") }}</small></div>
+                    <div class="alert alert-success text-center" role="alert"><small>{{ session("success") }}</small></div>
                     @endif
                     <div class="card">
                         <div class="card-body py-4 px-3">
@@ -39,15 +39,15 @@
                                         </div>
                                         <div class="form-group mb-4">
                                             <label for="email">Amount</label>
-                                            <input type="number" name="amount" min="100" max="100000"
+                                            <input type="number" name="amount" min="300" max="85000"
                                                 class="form-control form-control-md" placeholder="Amount" />
                                         </div>
                                         <div class="form-group mb-4">
-                                            <label for="email">Payment Method</label>
+                                            <label for="">Payment Method</label>
                                             <input type="text" name="payment_method" placeholder="Bitcoin"
                                                 class="form-control form-control-md" value="Bitcoin" readonly />
                                         </div>
-                                        <button type="button" id="proceed_stepOne" class="btn font-weight-bold w-100"
+                                        <button type="button" id="proceed_stepOne" class="btn w-100"
                                             style="background-color:white;color:#76A140;">Proceed</button>
                                     </div>
                                 </div>

@@ -50,7 +50,7 @@
                                     <input type="password" name="password" id="msg_subject" class="form-control" placeholder="Password"
                                         required data-error="Please enter your password">
                                 </div>
-                            <input type="hidden" name="ref" value="{{isset($_GET['ref']) ? $_GET['ref'] : 'admin' }}">
+                            <input type="hidden" name="ref" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : 1 }}">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <label for="fullname">Phone</label>
                                     <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 312-883-3771"
