@@ -91,6 +91,11 @@ class UserController extends Controller
 
     public function paymentForm($plan_name)
     {
+        $userUploadedId = Idcard::where('userId', Auth::id())->get();
+
+        if (count($userUploadedId) < 1) {
+            return redirect('/user/dashboard')->with('error', 'Please upload your valid Identity card');
+        }
         $plan = Paymentplan::where('name', $plan_name)->first();
 
         $mytransactions = Transaction::where('userId', Auth::id())->paginate(5);
@@ -152,7 +157,7 @@ class UserController extends Controller
                 $filepath = date('Y-m-d-s') . "-id." . $file->getClientOriginalExtension();
                 $file->move($destinationPath, $filepath);
                 $photo = $destinationPath . $filepath;
-                
+
                 $idcard = new Idcard;
                 $idcard->userId = Auth::user()->id;
                 $idcard->name = Auth::user()->name;
