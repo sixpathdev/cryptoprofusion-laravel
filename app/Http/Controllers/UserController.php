@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Duepayment;
 use App\Idcard;
-use App\Investmentprofit;
 use App\Paymentplan;
 use App\Referral;
 use App\Transaction;
@@ -96,6 +94,7 @@ class UserController extends Controller
         if (count($userUploadedId) < 1) {
             return redirect('/user/dashboard')->with('error', 'Please upload your valid Identity card');
         }
+
         $plan = Paymentplan::where('name', $plan_name)->first();
 
         $mytransactions = Transaction::where('userId', Auth::id())->paginate(5);
