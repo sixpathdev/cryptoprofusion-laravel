@@ -14,7 +14,7 @@
 
         <div id="box" style="width: 95%; margin: auto;"><br>
                     <p>Please follow the below link to change your password!</p><br><br>
-                    <p style="text-align:center;"><a href="https://cryptoprofusion.com/password/change?verifycode={{ $verifycode }}">
+                    <p style="text-align:center;"><a href="https://cryptoprofusion.com/newpassword?verifycode={{ $verifycode }}">
                     <button style="background:#76A140; cursor: pointer; color:white; padding:15px 70px 15px 70px; border: 1px solid #76A140;border-radius: 5px;">RESET PASSWORD</button>
                     </a></p>
 

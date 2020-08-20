@@ -96,7 +96,7 @@ class AuthController extends Controller
         $email = $request->input('email');
         $userExists = User::where('email', $email)->first();
         if (!$userExists) {
-            $request->session()->flash('error', "Failed to reset password");
+            $request->session()->flash('error', "Invalid account");
             return back();
         } else {
             $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzAZENDIKIDHYGTGYHJK';
@@ -105,6 +105,22 @@ class AuthController extends Controller
             $userExists->save();
             Mail::to('support@cryptoprofusion.com')->send(new Newpassword($email, $verifycode));
             $request->session()->flash('success', "Your new password has been sent to your email");
+            return redirect('/login');
+        }
+    }
+
+    public function resetpassword(Request $request)
+    {
+        $verifycode = $request->input('verifycode');
+        $userExists = User::where('verifycode', $verifycode)->first();
+        if (!$userExists) {
+            $request->session()->flash('error', "Invalid account");
+            return back();
+        } else {
+            $userExists->password = Hash::make($request->input('password'));
+            $userExists->verifycode = '';
+            $userExists->save();
+            $request->session()->flash('success', "Password changed successfully");
             return redirect('/login');
         }
     }

@@ -30,10 +30,14 @@ Route::get('/contact-us', function () {
 Route::get('/forgotpassword', function () {
     return view('auth.forgotpassword');
 });
+Route::get('/resetpassword', function () {
+    return view('auth.resetpassword');
+});
 Route::get('/register', "AuthController@registerForm");
 Route::post('/login', 'AuthController@login');
 Route::post('/register', 'AuthController@register');
 Route::post('/forgotpassword', 'AuthController@forgotpassword');
+Route::put('/resetpassword', 'AuthController@resetpassword');
 Route::get('/logout', 'AuthController@logout');
 Route::post('/contactsupport', 'ContactController@contactsupport');
 
