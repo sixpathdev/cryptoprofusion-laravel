@@ -111,11 +111,10 @@ class AuthController extends Controller
 
     public function resetpassword(Request $request)
     {
-        $verifycode = $request->input('verifycode');
+        if($request->input('newpassword') == $request->input('newpassword-confirm')) {
+            $verifycode = $request->input('verifycode');
         $userExists = User::where('verifycode', $verifycode)->first();
         if (!$userExists) {
-            $request->session()->flash('error', "Invalid account");
-            return back();
         } else {
             $userExists->password = Hash::make($request->input('password'));
             $userExists->verifycode = '';
@@ -123,5 +122,10 @@ class AuthController extends Controller
             $request->session()->flash('success', "Password changed successfully");
             return redirect('/login');
         }
+        } else {
+            $request->session()->flash('error', "Passwords do not match");
+            return back();
+        }
+        
     }
 }

@@ -14,7 +14,7 @@
                     </div>
                     <ul class="breadcrumb-bg">
                         <li class="home-bread"><a href="/" style="color: white;">Home</a></li>
-                        <li>Login</li>
+                        <li>resetpassword</li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="login-page">
                     <div class="login-form">
-                        <h4 class="login-title">LOGIN</h4>
+                        <h4 class="login-title">Reset password</h4>
                         <div class="row">
                             @if (session("success"))
                             <div class="alert alert-success" role="alert">{{ session("success") }}</div>
@@ -50,17 +50,9 @@
                                         required data-error="Enter same password as in above field">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <button type="submit" id="submit" class="login-btn">Reset</button>
+                                    <button type="submit" id="submit" class="login-btn">Update password</button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="clearfix"></div>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="clear"></div>
-                                    <div class="sign-icon">
-                                        <div class="acc-not">Don't have an account <a href="/register"
-                                                style="color: #76A140"> Update password</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </form>
                         </div>
