@@ -16,8 +16,8 @@
                 </div>
             </div>
 
-            <div class="row offset-1 mt-2 mt-lg-5">
-                <div class="col-10">
+            <div class="row offset-lg-1 ml-1 mt-2 mt-lg-5">
+                <div class="col-12 col-lg-10">
                     @if (session("error"))
                     <div class="alert alert-danger text-center" role="alert">{{ session("error") }}</div>
                     @endif

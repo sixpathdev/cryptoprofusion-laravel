@@ -85,9 +85,10 @@
                             <a href="/"><img src="img/logo/logo3.png" alt="" /></a>
                         </div>
                         <nav id="dropdown">
-                            <ul>
-                                <li><a class="s-menu" href="/register">Login</a></li>
-                                <li><a class="s-menu" href="/login">Login</a></li>
+                            <ul style="margin-top: 50px;margin-bottom: 80px;">
+                                <li><a class="s-menu" href="/register">Sign up</a></li>
+                                <li style="margin-top: 30px;"><a class="s-menu" href="/login">Login</a></li>
+                                <li></li>
                             </ul>
                         </nav>
                     </div>

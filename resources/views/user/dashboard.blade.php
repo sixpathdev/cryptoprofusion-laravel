@@ -9,9 +9,9 @@
         <!-- side nav ends -->
         <!-- page content -->
         @if (empty(Auth::user()->wallet->address))
-        <div class="col-lg-9 ml-sm-auto col-xl-10 pl-3 pr-5 px-xl-5 pt-1">
+        <div class="col-12 col-lg-9 ml-sm-auto col-xl-10 pl-3 pr-5 px-xl-5 pt-1">
             <div style="display: flex;justify-content:center;align-items:center;margin-top:130px;">
-                <div class="card" style="width: 30vw">
+                <div class="card update_wallet_card">
                     <div class="card-body px-3 py-4">
                         <span class="d-block text-center">Please update your <b>BITCOIN WALLET ADDRESS</b> before making
                             your first deposit.</span>
@@ -40,20 +40,20 @@
                     <div class="alert alert-success text-center" role="alert">{{ session("success") }}</div>
                     @endif
                 </div>
-                <div class="col-lg-8">
+                <div class="col-12 ml-4 ml-lg-0 col-lg-8">
                     <div class="row mt-2">
                         <div class="col-12 mb-2 col-lg-6 mb-lg-0">
                             <div class="card">
                                 <div class="card-body py-5">
-                                    <p class="h3 text-center">Deposited Amount</p>
+                                    <p class="h4 text-center">Deposited Amount</p>
                                     <p class="h3 text-center">{{ '$'.$total_deposited_amount }}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mb-2 col-lg-6 mb-lg-0">
+                        <div class="col-12 mb-2 col-lg-6 mt-3 mt-lg-0 mb-lg-0">
                             <div class="card">
                                 <div class="card-body py-5">
-                                    <p class="h3 text-center">Referral Bonus</p>
+                                    <p class="h4 text-center">Referral Bonus</p>
                                     <p class="h3 text-center">{{ '$'.$total_referral_amount }}</p>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                         <div class="ml-auto mr-3">{{ $mytransactions->links() }}</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 ml-4 ml-lg-0 mt-4 mt-lg-0 col-lg-4">
                     <div class="row">
                         <div class="col-12">
                             <div class="card mt-2">

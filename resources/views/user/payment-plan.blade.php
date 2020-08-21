@@ -14,9 +14,9 @@
                     <h5 class="text-muted">Select Payment</h5>
                 </div>
             </div>
-            <div class="row offset-1 mt-2 mt-lg-5">
+            <div class="row offset-lg-1 ml-1 ml-lg-0 mt-2 mt-lg-5">
                 @foreach ($plans as $plan)
-                <div class="col-12 col-lg-6 mx-auto">
+                <div class="col-12 col-lg-6 mx-auto mt-4 mt-lg-0">
                     <div class="card" style="width: 16em;">
                         <div class="card-body" style="padding: 0px;">
                             <div class="title text-center py-1" style="background: white;">

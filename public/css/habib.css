@@ -150,7 +150,19 @@ li {
         font-size: 16px;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .update_wallet_card {
+        width: 90vw !important;
+        margin-left: 5%;
+    }
+    .update_wallet_card .btn-primary {
+        position: relative;
+        right: 30%;
+    }
+}
+.update_wallet_card {
+    width: 30vw;
+}
 
 ul,
 li {

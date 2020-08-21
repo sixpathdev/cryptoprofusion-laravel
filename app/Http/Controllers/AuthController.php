@@ -15,19 +15,19 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
-            $request->validate([
-                'fullname' => 'required|max:255',
-                'email' => 'required|unique:users',
-                'password' => 'required',
-                'phone' => 'required|unique:users',
-                'ref' => 'required',
-            ]);
+        $request->validate([
+            'fullname' => 'required|max:255',
+            'email' => 'required|unique:users',
+            'password' => 'required',
+            'phone' => 'required|unique:users',
+            'ref' => 'required',
+        ]);
         try {
 
             $userExists = User::where('email', $request->input('email'))->first();
 
-            if (!$userExists || $userExists == null) {
-                $newUser = new User();
+            if (!$userExists) {
+                $newUser = new User;
                 $newUser->email = $request->input('email');
                 $newUser->fullname = $request->input('fullname');
                 $newUser->password = Hash::make($request->input('password'));
@@ -37,7 +37,7 @@ class AuthController extends Controller
                 $newUser->save();
 
                 $referred_user = User::where('email', $request->input('email'))->first();
-               $this->refRegister($request, $referred_user);
+                $this->refRegister($request, $referred_user);
 
                 $request->session()->flash('success', "Registration successful");
                 return redirect('/login');
@@ -53,7 +53,7 @@ class AuthController extends Controller
 
     public function refRegister(Request $request, $referred_user)
     {
-        $ref = new Referral();
+        $ref = new Referral;
         $ref->referral_id = $request->input('ref');
         $ref->user_id = $referred_user->id;
         $ref->bonus = 0;
@@ -115,17 +115,17 @@ class AuthController extends Controller
 
     public function resetpassword(Request $request)
     {
-        if($request->input('newpassword') == $request->input('newpassword-confirm')) {
+        if ($request->input('newpassword') == $request->input('newpassword-confirm')) {
             $verifycode = $request->input('verifycode');
-        $userExists = User::where('verifycode', $verifycode)->first();
-        if (!$userExists) {
-        } else {
-            $userExists->password = Hash::make($request->input('password'));
-            $userExists->verifycode = '';
-            $userExists->save();
-            $request->session()->flash('success', "Password changed successfully");
-            return redirect('/login');
-        }
+            $userExists = User::where('verifycode', $verifycode)->first();
+            if (!$userExists) {
+            } else {
+                $userExists->password = Hash::make($request->input('password'));
+                $userExists->verifycode = '';
+                $userExists->save();
+                $request->session()->flash('success', "Password changed successfully");
+                return redirect('/login');
+            }
         } else {
             $request->session()->flash('error', "Passwords do not match");
             return back();
