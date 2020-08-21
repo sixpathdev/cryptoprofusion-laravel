@@ -97,8 +97,8 @@
                                 Thus, for an investment amount of $1000, you will receive a total of $2,200 in 6 months.
                             </p>
                             <p>Note that, Investments and payout are made in BTC.</p>
-                            <span class="d-block">Minimum investment............$100</span>
-                            <span class="d-block">Maximum investment............$100,000</span>
+                            <span class="d-block">Minimum investment.........$300</span>
+                            <span class="d-block">Maximum investment............$80,000</span>
                         </div>
                     </div>
                 </div>

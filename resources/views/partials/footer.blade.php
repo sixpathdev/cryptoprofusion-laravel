@@ -7,7 +7,7 @@
                     <div class="footer-content logo-footer">
                         <div class="footer-head">
                             <div class="footer-logo">
-                                <a class="footer-black-logo" href="index.html#"><img src="img/logo/logo.png" alt=""></a>
+                                <a class="footer-black-logo" href="index.html#"><img src="/img/logo/logo3.png" alt=""></a>
                             </div>
                             <p>
                                 Cryptoprofusion is a true opportunity to earn on cryptocurrency/binary.Ultimate Trade is a company formed by a team of PROFESSIONAL TRADERS with EXPERTISE in one of the biggest financial markets of today, the CRYPTOCURRENCY/BINARY.
