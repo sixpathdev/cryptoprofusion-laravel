@@ -160,8 +160,7 @@
                     <a class="support-images" href="index.html#"><i class="flaticon-036-security"></i></a>
                     <div class="support-content">
                         <h4>Secure investment</h4>
-                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                            define their new business objectives and then create</p>
+                        <p>Investing with us is secured as we always keep to our promises. Our clients who have been with us can attest fully to this fact.</p>
                     </div>
                 </div>
             </div>
@@ -171,8 +170,7 @@
                     <a class="support-images" href="index.html#"><i class="flaticon-042-wallet"></i></a>
                     <div class="support-content">
                         <h4>Instant withdrawal</h4>
-                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                            define their new business objectives and then create</p>
+                        <p>As soon as payment is due, you get paid into your wallet address within 24 hours as stated. Our system regularly checks for users due for payment.</p>
                     </div>
                 </div>
             </div>
@@ -182,8 +180,7 @@
                     <a class="support-images" href="index.html#"><i class="flaticon-032-report"></i></a>
                     <div class="support-content">
                         <h4>Verified security</h4>
-                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                            define their new business objectives and then create</p>
+                        <p>Be rest assured that investing and having an account with us is risk free as we stay always to ensure our reputation remains intact positively.</p>
                     </div>
                 </div>
             </div>
@@ -192,9 +189,8 @@
                 <div class="support-services">
                     <a class="support-images" href="index.html#"><i class="flaticon-024-megaphone"></i></a>
                     <div class="support-content">
-                        <h4>Live customer support</h4>
-                        <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to
-                            define their new business objectives and then create</p>
+                        <h4>Customer support</h4>
+                        <p>If having any troubles, our support mail is support@cryptoprofusion.com and we respond swiftly to our users.</p>
                     </div>
                 </div>
             </div>

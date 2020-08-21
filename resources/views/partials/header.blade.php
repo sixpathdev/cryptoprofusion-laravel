@@ -82,7 +82,7 @@
                 <div class="col-md-12">
                     <div class="mobile-menu">
                         <div class="logo">
-                            <a href="/"><img src="img/logo/logo.png" alt="" /></a>
+                            <a href="/"><img src="img/logo/logo3.png" alt="" /></a>
                         </div>
                         <nav id="dropdown">
                             <ul>

@@ -7,7 +7,7 @@ use App\Referral;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
+// use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
@@ -15,7 +15,6 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
-        try {
             $request->validate([
                 'fullname' => 'required|max:255',
                 'email' => 'required|unique:users',
@@ -23,37 +22,42 @@ class AuthController extends Controller
                 'phone' => 'required|unique:users',
                 'ref' => 'required',
             ]);
+        try {
 
             $userExists = User::where('email', $request->input('email'))->first();
 
             if (!$userExists || $userExists == null) {
-                $newUser = new User;
+                $newUser = new User();
                 $newUser->email = $request->input('email');
                 $newUser->fullname = $request->input('fullname');
                 $newUser->password = Hash::make($request->input('password'));
                 $newUser->phone = $request->input('phone');
                 $newUser->photo = '/profile/avatar.png';
+                $newUser->user_id = $request->input('ref');
                 $newUser->save();
 
                 $referred_user = User::where('email', $request->input('email'))->first();
-                $ref = new Referral;
-                $ref->referral_id = $request->input('ref');
-                $ref->user_id = $referred_user->id;
-                $ref->bonus = 0;
-                $ref->save();
+               $this->refRegister($request, $referred_user);
 
                 $request->session()->flash('success', "Registration successful");
                 return redirect('/login');
-                return back();
             } else {
                 $request->session()->flash('error', "Account already exists!");
                 return back();
             }
         } catch (\Exception $e) {
-
-            $request->session()->flash('error', $e);
+            $request->session()->flash('error', 'An error occured');
             return back();
         }
+    }
+
+    public function refRegister(Request $request, $referred_user)
+    {
+        $ref = new Referral();
+        $ref->referral_id = $request->input('ref');
+        $ref->user_id = $referred_user->id;
+        $ref->bonus = 0;
+        $ref->save();
     }
 
     public function registerForm()
@@ -126,6 +130,5 @@ class AuthController extends Controller
             $request->session()->flash('error', "Passwords do not match");
             return back();
         }
-        
     }
 }
