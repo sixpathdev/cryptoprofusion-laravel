@@ -13,12 +13,11 @@
                 </div>
             </div>
             <div class="col-6 col-lg-4">
-                <div class="text-white float-right mr-1 mr-lg-3" style="display: flex;">
+                <div class="text-white float-right mr-1 mr-lg-3" style="display: flex;justify-content: center;align-items:center;">
                     <span class="mr-2">
                     <img src="{{$user->photo}}" alt="P" class="img-fluid rounded-circle" width="40px" height="40px" />
                     </span>
-                    <span style="font-size: 16px;">Hi, </span>
-                    <span style="font-size: 14px;">{{ explode(' ', ucwords($user->fullname))[0] }}</span>
+                    <span style="font-size: 16px;">{{ 'Hi, '.explode(' ', ucwords($user->fullname))[0] }}</span>
                 </div>
             </div>
         </div>

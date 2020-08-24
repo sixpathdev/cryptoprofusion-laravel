@@ -11,6 +11,7 @@ use App\Wallet;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use JD\Cloudder\Facades\Cloudder;
 
 class UserController extends Controller
 {
@@ -116,17 +117,22 @@ class UserController extends Controller
 
         try {
             if ($file = $request->file('image_proof')) {
-                $destinationPath = 'payment-proofs/'; // upload path
-                $filepath = date('Y-m-d-s') . "-proof." . $file->getClientOriginalExtension();
-                $file->move($destinationPath, $filepath);
-                $photo = $destinationPath . $filepath;
+                // $destinationPath = 'payment-proofs/'; // upload path
+                // $filepath = date('Y-m-d-s') . "-proof." . $file->getClientOriginalExtension();
+                // $file->move($destinationPath, $filepath);
+                // $photo = $destinationPath . $filepath;
+
+                $image_name = $request->file('image_proof')->getRealPath();
+                Cloudder::upload($image_name, null);
+                list($width, $height) = getimagesize($image_name);
+                $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
 
                 $transaction = new Transaction();
                 $transaction->userId = Auth::id();
                 $transaction->paymentplan = $plan;
                 $transaction->amount = $request->input('amount');
                 $transaction->bitcoin_address = $user_wallet->wallet->address;
-                $transaction->proof = $photo;
+                $transaction->proof = $image_url;
                 $transaction->payment_status = 'pending';
                 $transaction->verified = false;
                 $transaction->save();
@@ -152,15 +158,23 @@ class UserController extends Controller
 
         try {
             if ($file = $request->file('valid_id')) {
-                $destinationPath = 'uploaded-ids/'; // upload path
-                $filepath = date('Y-m-d-s') . "-id." . $file->getClientOriginalExtension();
-                $file->move($destinationPath, $filepath);
-                $photo = $destinationPath . $filepath;
-
-                $idcard = new Idcard;
-                $idcard->userId = Auth::user()->id;
-                $idcard->name = Auth::user()->name;
-                $idcard->idurl = $photo;
+                // $destinationPath = 'uploaded-ids/'; // upload path
+                // $filepath = date('Y-m-d-s') . "-id." . $file->getClientOriginalExtension();
+                // $name = $request->file('valid_id')->getClientOriginalName();
+                $image_name = $request->file('valid_id')->getRealPath();
+                Cloudder::upload($image_name, null);
+                list($width, $height) = getimagesize($image_name);
+                $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
+                $res = Cloudder::getResult();
+                dd($res['secure_url']);
+                // $file->move($destinationPath, $filepath);
+                // $photo = $destinationPath . $filepath;
+                
+                $idcard = new Idcard();
+                $idcard->userId = Auth::id();
+                $idcard->name = Auth::user()->fullname;
+                $idcard->verified = false;
+                $idcard->idurl = $res['secure_url'];
                 $idcard->save();
 
                 $request->session()->flash('success', "Identity card uploaded successfully");

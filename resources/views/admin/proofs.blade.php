@@ -34,7 +34,7 @@
                                     <th scope="row">{{$i+1}}</th>
                                     <td>{{$paymentproofs[$i]->bitcoin_address}}</td>
                                     <td>{{$paymentproofs[$i]->amount}}</td>
-                                    <td><a href="{{'../'.$paymentproofs[$i]->proof}}" target="_blank" class="text-primary">View</a></td>
+                                    <td><a href="{{$paymentproofs[$i]->proof}}" target="_blank" class="text-primary">View</a></td>
                                 </tr>
                                 @endfor
                                 @else

@@ -1,4 +1,3 @@
-
 <header class="header-one">
     <!-- Start top bar -->
     <div class="topbar-area fix hidden-xs">
@@ -7,9 +6,13 @@
                 <div class="col-md-12 col-sm-6">
                     <div class="topbar-left">
                         <ul>
-                            <li><a href="index.html#"><span><img src="/img/mail-icon.png" class="img-fluid" width="28px" height="28px" /></span> support@cryptoprofusion.com</a></li>
-                            <li><a href="index.html#"><span><img src="/img/phone-icon.png" class="img-fluid" width="28px" height="28px" /></span>+1 312-883-3771</a></li>
-                            <li><a href="https://www.instagram.com/cryptoprofusion"><span><img src="/img/instagram-icon.png" class="img-fluid" width="28px" height="28px" /></span>@cryptoprofusion</a></li>
+                            <li><a href="index.html#"><span><img src="/img/mail-icon.png" class="img-fluid" width="28px"
+                                            height="28px" /></span> support@cryptoprofusion.com</a></li>
+                            <li><a href="index.html#"><span><img src="/img/phone-icon.png" class="img-fluid"
+                                            width="28px" height="28px" /></span>+1 312-883-3771</a></li>
+                            <li><a href="https://www.instagram.com/cryptoprofusion"><span><img
+                                            src="/img/instagram-icon.png" class="img-fluid" width="28px"
+                                            height="28px" /></span>@cryptoprofusion</a></li>
                         </ul>
                     </div>
                 </div>
@@ -27,12 +30,10 @@
                         <div class="col-md-3 col-sm-3">
                             <div class="logo">
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll white-logo"
-                                    href="/">
+                                <a class="navbar-brand page-scroll white-logo" href="/">
                                     <img src="img/logo/logo3.png" class="img-fluid" alt="">
                                 </a>
-                                <a class="navbar-brand page-scroll black-logo"
-                                    href="/">
+                                <a class="navbar-brand page-scroll black-logo" href="/">
                                     <img src="img/logo/logo3.png" class="img-fluid" alt="">
                                 </a>
                             </div>
@@ -79,7 +80,7 @@
     <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12 col-md-12">
                     <div class="mobile-menu">
                         <div class="logo">
                             <a href="/"><img src="img/logo/logo3.png" alt="" /></a>

@@ -24,35 +24,47 @@
                     @if (session("success"))
                     <div class="alert alert-success text-center" role="alert">{{ session("success") }}</div>
                     @endif
-                    <form method="POST" action="/user/profile">
-                        @csrf
-                        @method('PUT')
-                        <div class="form-group mb-4">
-                            <label for="fullname" class="text-muted">Full Name</label>
-                            <input type="fullname" class="form-control form-control-lg" name="fullname" placeholder="Fullname"
-                                id="fullname" value="{{$user->fullname}}" required>
+                    <div class="row">
+                        <div class="col-12 col-lg-7 offset-lg-5">
+                            <img class="img-fluid rounded-circle" src="{{$user->photo}}" alt="profile_picture" />
                         </div>
-                        <div class="form-row mb-2">
-                            <div class="form-group col-md-6">
-                                <label for="email" class="text-muted">Email</label>
-                                <input type="fullname" class="form-control form-control-lg" name="email" placeholder="Email"
-                                    id="email" value="{{$user->email}}" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="phone" class="text-muted">Phone</label>
-                                <input type="tel" id="phone" class="form-control form-control-lg" name="phone" placeholder="Phone"
-                                    value="{{$user->phone}}" required>
-                            </div>
+                        <div class="col-12 col-lg-7 offset-lg-5 mt-lg-2">
+                            <button class="btn btn-primary">Upload image</button>
                         </div>
+                        <div class="col-12">
+                            <form method="POST" action="/user/profile">
+                                @csrf
+                                @method('PUT')
+                                <div class="form-group mb-4">
+                                    <label for="fullname" class="text-muted">Full Name</label>
+                                    <input type="fullname" class="form-control form-control-lg" name="fullname"
+                                        placeholder="Fullname" id="fullname" value="{{$user->fullname}}" required>
+                                </div>
+                                <div class="form-row mb-2">
+                                    <div class="form-group col-md-6">
+                                        <label for="email" class="text-muted">Email</label>
+                                        <input type="fullname" class="form-control form-control-lg" name="email"
+                                            placeholder="Email" id="email" value="{{$user->email}}" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="phone" class="text-muted">Phone</label>
+                                        <input type="tel" id="phone" class="form-control form-control-lg" name="phone"
+                                            placeholder="Phone" value="{{$user->phone}}" required>
+                                    </div>
+                                </div>
 
-                        <div class="form-group mb-4">
-                            <label for="phone" class="text-muted">Bitcoin Address</label>
-                            <input type="text" class="form-control form-control-lg" name="wallet_address" placeholder="Wallet Address"
-                                value="{{ empty($user->wallet->address) ? '' : $user->wallet->address }}" required>
+                                <div class="form-group mb-4">
+                                    <label for="phone" class="text-muted">Bitcoin Address</label>
+                                    <input type="text" class="form-control form-control-lg" name="wallet_address"
+                                        placeholder="Wallet Address"
+                                        value="{{ empty($user->wallet->address) ? '' : $user->wallet->address }}"
+                                        required>
+                                </div>
+                                <button type="submit" class="btn px-5 py-2 text-white"
+                                    style="background: #76A140;">Update</button>
+                            </form>
                         </div>
-                        <button type="submit" class="btn px-5 py-2 text-white"
-                            style="background: #76A140;">Update</button>
-                    </form>
+                    </div>
                 </div>
             </div>
 

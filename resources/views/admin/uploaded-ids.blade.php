@@ -32,14 +32,14 @@
                                 @for ($i = 0; $i < count($idproofs); $i++) <tr>
                                     <th scope="row">{{$i+1}}</th>
                                     <td>{{$idproofs[$i]->name}}</td>
-                                    <td><a href="{{'../'.$idproofs[$i]->idurl}}" target="_blank"
+                                    <td><a href="{{$idproofs[$i]->idurl}}" target="_blank"
                                             class="text-primary">View</a></td>
                                     <td>
                                         <form action="/admin/verifyUserId" method="POST">
                                             @csrf
                                             @method('PUT')
                                             <input type="hidden" name="userId" value="{{$idproofs[$i]->userId}}">
-                                            <button type="submit" class="btn btn-default">Verify user</button>
+                                            <button type="submit" class="btn btn-primary text-white">Verify user</button>
                                         </form>
                                     </td>
                                     </tr>
