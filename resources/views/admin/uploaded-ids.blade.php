@@ -17,6 +17,12 @@
 
             <div class="container">
                 <div class="row mt-2">
+                    @if (session("success"))
+                    <div class="alert alert-success" role="alert">{{ session("success") }}</div>
+                    @endif
+                    @if (session("error"))
+                    <div class="alert alert-danger" role="alert">{{ session("error") }}</div>
+                    @endif
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
@@ -32,21 +38,26 @@
                                 @for ($i = 0; $i < count($idproofs); $i++) <tr>
                                     <th scope="row">{{$i+1}}</th>
                                     <td>{{$idproofs[$i]->name}}</td>
-                                    <td><a href="{{$idproofs[$i]->idurl}}" target="_blank"
-                                            class="text-primary">View</a></td>
+                                    <td><a href="{{$idproofs[$i]->idurl}}" target="_blank" class="text-primary">View</a>
+                                    </td>
                                     <td>
                                         <form action="/admin/verifyUserId" method="POST">
                                             @csrf
                                             @method('PUT')
                                             <input type="hidden" name="userId" value="{{$idproofs[$i]->userId}}">
-                                            <button type="submit" class="btn btn-primary text-white">Verify user</button>
+                                            <button type="submit" class="btn btn-primary text-white">Verify
+                                                user</button>
                                         </form>
                                     </td>
                                     </tr>
                                     @endfor
-                                @else
-                                    <tr><td><div class="text-center text-muted">No uploaded id yet</div></td></tr>
-                                @endif
+                                    @else
+                                    <tr>
+                                        <td>
+                                            <div class="text-center text-muted">No uploaded id yet</div>
+                                        </td>
+                                    </tr>
+                                    @endif
                             </tbody>
                         </table>
                     </div>

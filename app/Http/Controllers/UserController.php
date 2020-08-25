@@ -117,11 +117,6 @@ class UserController extends Controller
 
         try {
             if ($file = $request->file('image_proof')) {
-                // $destinationPath = 'payment-proofs/'; // upload path
-                // $filepath = date('Y-m-d-s') . "-proof." . $file->getClientOriginalExtension();
-                // $file->move($destinationPath, $filepath);
-                // $photo = $destinationPath . $filepath;
-
                 $image_name = $request->file('image_proof')->getRealPath();
                 Cloudder::upload($image_name, null);
                 list($width, $height) = getimagesize($image_name);
@@ -158,17 +153,11 @@ class UserController extends Controller
 
         try {
             if ($file = $request->file('valid_id')) {
-                // $destinationPath = 'uploaded-ids/'; // upload path
-                // $filepath = date('Y-m-d-s') . "-id." . $file->getClientOriginalExtension();
-                // $name = $request->file('valid_id')->getClientOriginalName();
                 $image_name = $request->file('valid_id')->getRealPath();
                 Cloudder::upload($image_name, null);
                 list($width, $height) = getimagesize($image_name);
                 $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
                 $res = Cloudder::getResult();
-                dd($res['secure_url']);
-                // $file->move($destinationPath, $filepath);
-                // $photo = $destinationPath . $filepath;
                 
                 $idcard = new Idcard();
                 $idcard->userId = Auth::id();
@@ -182,6 +171,35 @@ class UserController extends Controller
             }
         } catch (Exception $e) {
             $request->session()->flash('error', "Error uploading card");
+            return back();
+        }
+    }
+
+    public function uploadprofilephoto(Request $request)
+    {
+        $request->validate([
+            'profile_photo'  => 'required|mimes:png,jpeg,jpg|max:2048',
+        ]);
+
+        try {
+        // dd('d');
+            if ($file = $request->file('profile_photo')) {
+                $image_name = $request->file('profile_photo')->getRealPath();
+                Cloudder::upload($image_name, null);
+                list($width, $height) = getimagesize($image_name);
+                $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
+                $res = Cloudder::getResult();
+                
+                $user = User::where('id', Auth::id())->first();
+                // dd($user);
+                $user->photo = $res['secure_url'];
+                $user->save();
+
+                $request->session()->flash('success', "Photo updated successfully");
+                return back();
+            }
+        } catch (Exception $e) {
+            $request->session()->flash('error', "Error uploading photo");
             return back();
         }
     }

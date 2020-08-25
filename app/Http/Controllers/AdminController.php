@@ -37,7 +37,7 @@ class AdminController extends Controller
         $user_id = $request->input('userId');
 
         $isFirstPayment = Transaction::where('userId', $user_id)->get();
-        
+
         if ($isFirstPayment->count() == 1) {
             $amount = (int)$isFirstPayment[0]->amount;
             $fivepercent = $amount * 0.05;
@@ -57,7 +57,8 @@ class AdminController extends Controller
             $transaction->verified = 1;
             $transaction->save();
 
-            return back()->with('success', 'User payment verified successfully');
+            $request->session()->flash('success', "User payment verified successfully");
+            return back();
         }
     }
 
@@ -79,6 +80,7 @@ class AdminController extends Controller
         $user_id_card->verified = true;
         $user_id_card->save();
 
-        return back()->with('success', 'User verified successfully');
+        $request->session()->flash('success', "User verified successfully");
+        return back();
     }
 }

@@ -2,6 +2,7 @@
 @section('content')
 
 @include('partials.topnav')
+@include('modal.uploadphoto-modal')
 <div class="container-fluid pb-5">
     <div class="row">
         <!-- side nav -->
@@ -25,11 +26,11 @@
                     <div class="alert alert-success text-center" role="alert">{{ session("success") }}</div>
                     @endif
                     <div class="row">
-                        <div class="col-12 col-lg-7 offset-lg-5">
-                            <img class="img-fluid rounded-circle" src="{{$user->photo}}" alt="profile_picture" />
+                        <div class="col-12 col-lg-7 offset-lg-4">
+                            <img class="img-fluid rounded-circle" style="width: 240px;height:240px;border:1px solid rgb(52, 226, 52);" src="{{$user->photo}}" alt="profile_picture" />
                         </div>
                         <div class="col-12 col-lg-7 offset-lg-5 mt-lg-2">
-                            <button class="btn btn-primary">Upload image</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#staticBackdropphoto">Upload image</button>
                         </div>
                         <div class="col-12">
                             <form method="POST" action="/user/profile">

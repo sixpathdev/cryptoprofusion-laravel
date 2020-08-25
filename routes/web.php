@@ -56,6 +56,7 @@ Route::prefix('user')->group(function () {
     Route::get('/plan/{plan_name}', 'UserController@paymentForm');
     Route::post('/uploadproof', 'UserController@uploadproof');
     Route::post('/uploadid', 'UserController@uploadid');
+    Route::put('/uploadphoto', 'UserController@uploadprofilephoto');
 
 });
 
