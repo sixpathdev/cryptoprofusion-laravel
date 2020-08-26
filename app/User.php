@@ -41,7 +41,7 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Wallet');
     }
-
+    
     public function userDescendants()
     {
         return $this->hasMany('App\User');

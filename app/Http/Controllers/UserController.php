@@ -118,7 +118,7 @@ class UserController extends Controller
         try {
             if ($file = $request->file('image_proof')) {
                 $image_name = $request->file('image_proof')->getRealPath();
-                Cloudder::upload($image_name, null);
+                Cloudder::upload($image_name, null, array('folder' => 'payment_proofs', "overwrite" => TRUE, "resource_type" => "image"));
                 list($width, $height) = getimagesize($image_name);
                 $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
 
@@ -154,7 +154,7 @@ class UserController extends Controller
         try {
             if ($file = $request->file('valid_id')) {
                 $image_name = $request->file('valid_id')->getRealPath();
-                Cloudder::upload($image_name, null);
+                Cloudder::upload($image_name, null, array('folder' => 'identity_cards', "overwrite" => TRUE, "resource_type" => "image"));
                 list($width, $height) = getimagesize($image_name);
                 $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
                 $res = Cloudder::getResult();
@@ -182,17 +182,16 @@ class UserController extends Controller
         ]);
 
         try {
-        // dd('d');
             if ($file = $request->file('profile_photo')) {
                 $image_name = $request->file('profile_photo')->getRealPath();
-                Cloudder::upload($image_name, null);
+                Cloudder::upload($image_name, null, array('folder' => 'profile_photos', "overwrite" => TRUE, "resource_type" => "image"));
                 list($width, $height) = getimagesize($image_name);
                 $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
                 $res = Cloudder::getResult();
                 
                 $user = User::where('id', Auth::id())->first();
-                // dd($user);
-                $user->photo = $res['secure_url'];
+                $user->photo = $res['url'];
+                // $user->photo = $res['secure_url'];
                 $user->save();
 
                 $request->session()->flash('success', "Photo updated successfully");
