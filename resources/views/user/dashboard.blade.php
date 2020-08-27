@@ -98,6 +98,7 @@
                 </div>
                 <div class="col-12 ml-4 ml-lg-0 mt-4 mt-lg-0 col-lg-4">
                     <div class="row">
+                        @if (!$hasIdCard)
                         <div class="col-12">
                             <div class="card mt-2">
                                 <div class="card-body p-3" style="background: white;color:rgb(221, 46, 46);">
@@ -115,6 +116,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                         <div class="col-12 mt-4">
                             <div class="card">
                                 <div class="card-body p-3" style="background: white;">

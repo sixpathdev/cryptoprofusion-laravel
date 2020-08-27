@@ -14,7 +14,7 @@ class AdminController extends Controller
 {
     public function admindashboard(Request $request)
     {
-        $deposited_amount = Transaction::all()->pluck('amount');
+        $deposited_amount = Transaction::where('status', 'verified')->pluck('amount');
         $total_deposited_amount = 0;
         for ($i = 0; $i < count($deposited_amount); $i++) {
             $a = (int) $deposited_amount[$i];
@@ -47,8 +47,7 @@ class AdminController extends Controller
                 }
                 $user_obj->bonus = $refBonusAmount;
             } else {
-                $request->session()->flash('error', "Error fetching users and referrals");
-                return back();
+                return view('admin.dashboard', compact('user_arr', 'all_users_count', 'total_deposited_amount', 'total_referral_amount', 'mytransactions'));
             }
         }
         array_push($user_arr, $user_obj);
@@ -56,7 +55,7 @@ class AdminController extends Controller
     }
 
     public function verifyClientPayment(Request $request)
-    {
+    {   
         $client_id = $request->input('txid');
         $user_id = $request->input('userId');
 

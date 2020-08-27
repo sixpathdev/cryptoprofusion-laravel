@@ -41,6 +41,11 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Wallet');
     }
+
+    public function idCard()
+    {
+        return $this->hasOne('App\Idcard', 'userId');
+    }
     
     public function userDescendants()
     {

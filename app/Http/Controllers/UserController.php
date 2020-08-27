@@ -37,8 +37,9 @@ class UserController extends Controller
         }
 
         $mytransactions = Transaction::where('userId', Auth::id())->paginate(5);
+        $hasIdCard = Idcard::where('userId', Auth::id())->first();
 
-        return view('user.dashboard', compact('total_deposited_amount', 'total_referral_amount', 'mytransactions'));
+        return view('user.dashboard', compact('hasIdCard', 'total_deposited_amount', 'total_referral_amount', 'mytransactions'));
     }
 
     public function profile()

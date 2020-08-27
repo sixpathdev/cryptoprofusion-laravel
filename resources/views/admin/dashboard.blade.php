@@ -103,6 +103,8 @@
                 </div>
                 <div class="ml-auto mr-3">{{ $mytransactions->links() }}</div>
             </div>
+            @if (count($user_arr))
+                
             <div class="row mt-5">
                 <div class="col-12 col-lg-12">
                     <div class="card">
@@ -136,6 +138,7 @@
                 </div>
                 <div class="ml-auto mr-3">{{ $user_arr->links() }}</div>
             </div>
+            @endif
 
         </div>
         <!-- Page content ends -->
