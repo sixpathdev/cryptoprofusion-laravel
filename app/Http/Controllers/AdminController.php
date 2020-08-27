@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Idcard;
+use App\Mail\ClientpaymentSuccess;
+use App\Mail\Idverified;
 use App\Referral;
 use App\Transaction;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use stdClass;
 
 class AdminController extends Controller
@@ -54,8 +57,13 @@ class AdminController extends Controller
         return view('admin.dashboard', compact('user_arr', 'all_users_count', 'total_deposited_amount', 'total_referral_amount', 'mytransactions'));
     }
 
+    // public function supmail()
+    // {
+    //     return view('emails.notifypayment-success');
+    // }
+
     public function verifyClientPayment(Request $request)
-    {   
+    {
         $client_id = $request->input('txid');
         $user_id = $request->input('userId');
 
@@ -73,7 +81,11 @@ class AdminController extends Controller
             $transaction->verified = 1;
             $transaction->save();
 
-            return back()->with('success', 'User payment verified successfully');
+            $user = User::where('id', $user_id)->first();
+            $sendmail = Mail::to($user->email)->send(new ClientpaymentSuccess($user->fullname, $amount));
+            if ($sendmail) {
+                $request->session()->flash('success', "User payment verified successfully");
+            }
         } else {
             $transaction = Transaction::where('id', $client_id)->where('verified', 0)->first();
             $transaction->payment_status = 'verified';
@@ -99,11 +111,18 @@ class AdminController extends Controller
 
     public function verifyUserId(Request $request)
     {
-        $user_id_card = Idcard::where('userId', $request->input('userId'))->first();
+        $userId = $request->input('userId');
+        $user_id_card = Idcard::where('userId', $userId)->first();
         $user_id_card->verified = true;
         $user_id_card->save();
 
-        $request->session()->flash('success', "User verified successfully");
+        $user = User::where('id', $userId)->first();
+        $sendmail = Mail::to($user->email)->send(new Idverified($user->fullname));
+        if ($sendmail) {
+            $request->session()->flash('success', "User verified successfully");
+            return back();
+        }
+
         return back();
     }
 }
