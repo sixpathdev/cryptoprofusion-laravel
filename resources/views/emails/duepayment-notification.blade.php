@@ -9,7 +9,7 @@
     <title>Notification</title>
 </head>
 
-<body style="background:#76A140;">
+<body style="background: #fafafa;width: 38em;margin: auto;padding: 10px;">
     <div class="container">
         <div class="row">
             <div class="col-6 offset-3 mt-5">

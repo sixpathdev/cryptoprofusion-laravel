@@ -107,7 +107,7 @@ class AuthController extends Controller
             $verifycode = substr(str_shuffle($permitted_chars), 0, 8);
             $userExists->verifycode = $verifycode;
             $userExists->save();
-            Mail::to('support@cryptoprofusion.com')->send(new Newpassword($email, $verifycode));
+            Mail::to($userExists->email)->send(new Newpassword($email, $verifycode));
             $request->session()->flash('success', "Your new password has been sent to your email");
             return redirect('/login');
         }

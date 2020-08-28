@@ -30,6 +30,6 @@ class Idverified extends Mailable
      */
     public function build()
     {
-        return $this->from('support@cryptoprofusion.com')->view('view.name');
+        return $this->from('support@cryptoprofusion.com')->view('emails.idverified');
     }
 }

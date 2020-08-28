@@ -12,11 +12,11 @@
 <body style="background: #fafafa;width: 38em;margin: auto;padding: 10px;">
     <div class="container">
         <div class="row">
-            <div class="col-6 offset-3 mt-5">
-                <div class="card" style="border-radius: 0px;">
-                    <div class="card-body pb-5" style="color: #76A140;">
-                        <p>Hello {{$fullname}}, <br><br> You're receiving this email from <b>Cryptoprofusion</b> as a proof that we have
-                            verified your payment of {{'$'.$amount}} was successful. Your countdown starts immediately</p>
+            <div class="col-4 mt-4">
+                <div class="card" style="border-radius: 0px;width: 38em;margin: auto;">
+                    <div class="card-body pb-5" style="color: #76A140;font-size:16px;text-align:justify;">
+                        <p>Hello {{$fullname}}, <br><br> You're receiving this email from <b>Cryptoprofusion</b> as a proof <br> that we have
+                            verified your uploaded document. <br> Continue to <a href="https://cryptoprofusion.com/login" class="text-decoration-none btn btn-primary" style="background: #76A140;color:white;text-decoration:none;padding: 6px 8px;">Login</a></p>
                         <p>cheers!</p>
                     </div>
                 </div>

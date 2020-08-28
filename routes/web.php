@@ -47,7 +47,7 @@ Route::get('/duehook', 'HookController@duehook');
 
 
 Route::get('/getdescendants', 'UserController@getdescendants');
-// Route::get('/supmail', 'AdminController@supmail');
+Route::get('/supmail', 'AdminController@supmail');
 
 Route::prefix('user')->group(function () {
     Route::get('/dashboard', 'UserController@dashboard');
