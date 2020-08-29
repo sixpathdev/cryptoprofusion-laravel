@@ -120,4 +120,23 @@ class AdminController extends Controller
         $request->session()->flash('success', "User verified successfully");
         return back();
     }
+
+    public function listmembers()
+    {
+        $users_list = User::where('email', '!=', 'sixpathdev@gmail.com')->paginate(10);
+        return view('admin.list-members', compact('users_list'));
+    }
+    
+    public function directRef($id)
+    {
+        $user = User::where('user_id', $id)->first();
+        return $user->fullname;
+    }
+
+    public function viewuser($id)
+    {
+        $user = User::findOrFail($id);
+        $directDescendant = $this->directRef($id);
+        return view('admin.viewuser', compact('user', 'directDescendant'));
+    }
 }

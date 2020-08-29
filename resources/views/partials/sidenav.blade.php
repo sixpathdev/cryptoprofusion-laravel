@@ -8,10 +8,12 @@
             <li class="mb-1"><a style="font-size: 14px;" href="/admin/dashboard">Admin Dashboard</a></li>
             <li class="my-1"><a style="font-size: 14px;" href="/admin/payment-proofs">Payment proofs</a></li>
             <li class="my-1"><a style="font-size: 14px;" href="/admin/id-proofs">Uploaded Ids</a></li>
-            @endif
+            <li class="my-1"><a style="font-size: 14px;" href="/admin/members/all">Members</a></li>
+            @else
             <li class="my-1"><a style="font-size: 14px;" href="/user/dashboard">Dashboard</a></li>
             <li class="my-1"><a style="font-size: 14px;" href="/user/payment-plan">Make Payment</a></li>
             <li class="my-1"><a style="font-size: 14px;" href="/user/profile">Profile</a></li>
+            @endif
             <li class="my-1"><a style="font-size: 14px;" href="/logout">Logout</a></li>
         </ul>
     </div>

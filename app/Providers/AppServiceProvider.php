@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -25,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer(['user.dashboard', 'admin.proofs', 'admin.uploaded-ids', 'admin.dashboard', 'user.payment', 'user.profile', 'user.payment-plan'], function($view){
+        View::composer(['user.dashboard', 'admin.proofs', 'admin.list-members', 'admin.uploaded-ids', 'admin.dashboard', 'user.payment', 'user.profile', 'user.payment-plan'], function($view){
             $user = Auth::user();
             $view->with('user', $user);
         });

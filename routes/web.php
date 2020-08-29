@@ -67,4 +67,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/id-proofs', 'AdminController@idproofs');
     Route::put('/verifypayment', 'AdminController@verifyClientPayment');
     Route::put('/verifyUserId', 'AdminController@verifyUserId');
+    Route::get('/members/all', 'AdminController@listmembers');
+    Route::get('/user/{id}', 'AdminController@viewuser');
 });
