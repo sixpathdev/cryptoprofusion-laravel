@@ -56,7 +56,7 @@
                                 <div id="upload_proof" style="display: none;">
                                     <span class="d-block h5 font-weight-bold">MAKE DEPOSIT</span>
                                     <p>All Bitcoin payments should be sent to the bitcoin address below:</p>
-                                    <p class="my-3 font-weight-bold">1F3tPytmbQATRMNmGT2qVYrrr86uzGzpWq</p>
+                                    <p class="my-3 font-weight-bold">3GyEims5zYT2EK6ho8hmiEavTTRTo6bqK4</p>
                                     <p>Please note that your deposit amount should be sent else your funding would
                                         be marked
                                         as
