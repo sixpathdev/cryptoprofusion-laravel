@@ -113,7 +113,7 @@ class AdminController extends Controller
         $user = User::where('id', $userId)->first();
         Mail::to($user->email)->send(new Idverified($user->fullname));
 
-        $user_id_card = Idcard::where('userId', $userId)->first();
+        $user_id_card = Idcard::where('userId', $userId)->where('verified', 0)->first();
         $user_id_card->verified = true;
         $user_id_card->save();
 
@@ -123,13 +123,14 @@ class AdminController extends Controller
 
     public function listmembers()
     {
-        $users_list = User::where('email', '!=', 'sixpathdev@gmail.com')->paginate(10);
+        $users_list = User::where('email', '!=', 'superadmin@gmail.com')->paginate(8);
         return view('admin.list-members', compact('users_list'));
     }
-    
+
     public function directRef($id)
     {
-        $user = User::where('user_id', $id)->first();
+        $initial_user = User::findOrFail($id);
+        $user = User::findOrFail($initial_user->user_id);
         return $user->fullname;
     }
 

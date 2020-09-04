@@ -53,7 +53,7 @@
                                         <div class="form-group">
                                             <label for="wallet">Bitcoin Address</label>
                                             <input type="text" class="form-control" readonly
-                                                value="{{$user->wallet->address}}">
+                                                value="{{ isset($user->wallet->address) ? $user->wallet->address : ''}}">
                                         </div>
                                     </form>
                                 </div>

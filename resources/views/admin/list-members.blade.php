@@ -42,7 +42,7 @@
                                 <tr>
                                     <th scope="row">{{$user_list->id}}</th>
                                     <td>{{$user_list->fullname}}</td>
-                                    <td>{{$user_list->wallet->address}}</td>
+                                    <td>{{ isset($user_list->wallet->address) ? $user_list->wallet->address : '' }}</td>
                                     <td>{{$user_list->email}}</td>
                                     <td>
                                     <a href="/admin/user/{{$user_list->id}}">View User</a>    
