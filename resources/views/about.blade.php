@@ -76,6 +76,8 @@
                                 lecturing, research, trading, and financial services. Our exparts where able to develop
                                 a trading bot that trades Forex without fail.
                                 We called this the Cryptoprofusion Breakthrough Trading System (CBTS).</p>
+                                <p>Our office is located at <b>Place Centrale 7
+                                    1305 Penthalaz, Switzerland</b></p>
                         </div>
                     </div>
                 </div>

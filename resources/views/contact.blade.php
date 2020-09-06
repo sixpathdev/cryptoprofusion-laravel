@@ -55,11 +55,15 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <!-- Start Map -->
-                <div class="map-area">
-                    <div id="googleMap" style="width:100%;height:380px;"></div>
+                <div class="contact-icon text-center">
+                    <div class="single-icon">
+                        <span style="display: block;margin-bottom: 15px;">Office Address:</span>
+                        <p>
+                            Place Centrale 7 <br>
+                            1305 Penthalaz, Switzerland
+                        </p>
+                    </div>
                 </div>
-                <!-- End Map -->
             </div>
             <!-- Start Left contact -->
             <div class="col-md-6 col-sm-6 col-xs-12">
