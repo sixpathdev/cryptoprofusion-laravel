@@ -56,8 +56,8 @@
                                         required data-error="Please enter your correct password">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <label for="c_password">Confirm password</label>
-                                    <input type="email" name="ref" class="form-control" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : 'superadmin@cryptoprofusion.com' }}">
+                                    <label for="ref">Who referred you?</label>
+                                    <input type="email" name="ref" class="form-control" id="ref" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : '' }}">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <label for="fullname">Phone</label>

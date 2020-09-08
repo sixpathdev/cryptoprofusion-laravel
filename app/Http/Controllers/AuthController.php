@@ -23,6 +23,11 @@ class AuthController extends Controller
             'phone' => 'required|unique:users',
             'ref' => 'required',
         ]);
+
+        if(empty($request->input('ref'))) {
+            $request->session()->flash('error', "Referral field must not be blank. Please input the referral email address.");
+                return back();
+        }
         
         try {
 
