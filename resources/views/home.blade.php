@@ -637,12 +637,12 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="check-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check8">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check9">
                                                 <span class="acc-icons"></span>What is the account manager program?
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="check8" class="panel-collapse collapse ">
+                                    <div id="check9" class="panel-collapse collapse ">
                                         <div class="panel-body">
                                             <p>
                                                 The account manager program is a set of technical solutions and financial capabilities that have been created for active investors who are ready to participate in the development of our company and receive a worthy reward and deal for it.
@@ -651,26 +651,83 @@
                                     </div>
                                 </div>
                                 <!-- End Panel Default -->
+
                                 <!-- Panel Default -->
-                                {{-- <div class="panel panel-default">
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="check-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check4">
-                                                <span class="acc-icons"></span>We are the best online flatform
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check8">
+                                                <span class="acc-icons"></span>Can I lose my money investing with your company?
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="check4" class="panel-collapse collapse ">
+                                    <div id="check8" class="panel-collapse collapse ">
                                         <div class="panel-body">
                                             <p>
-                                                When replacing a multi-lined selection of text, the generated dummy text
-                                                maintains the amount of lines. When replacing a selection of text within
-                                                a single line, the amount of words is roughly being maintained.
+                                                Your investment, as well as your trust is our core values. We will make every effort to protect your money and reduce the risk of loss to zero.
                                             </p>
                                         </div>
                                     </div>
-                                </div> --}}
+                                </div>
                                 <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check10">
+                                                <span class="acc-icons"></span>What information about myself should I provide to the company?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check10" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                The only information about you that the company needs after your sign up is your valid I.D upload, your profil photo uplaod and your bitcoin wallet address upload.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check11">
+                                                <span class="acc-icons"></span>What the company is doing with respect to the confidentiality of the personal data provided?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check11" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                We collect your personal information solely for use in cooperation with investors. Under no circumstances will these personal data be disclosed to third parties.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check12">
+                                                <span class="acc-icons"></span>Can I be sure of the security of my data?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check12" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                We guarantee to our users the protection and safety of their personal information. The site is protected from all DDoS attacks. Any transmitted data passes SSL-encryption. We have only reliable script and high-class SSL certificates.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                                
                             </div>
                         </div>
                         <!-- End FAQ -->

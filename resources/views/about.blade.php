@@ -27,14 +27,85 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="about-image">
-                    <img src="img/about/ab.jpg" alt="">
-                    <div class="video-content">
-                        <a href="https://www.youtube.com/watch?v=O33uuBh6nXA" class="video-play vid-zone">
-                            <i class="fa fa-play"></i>
-                        </a>
+                <div>
+                    <h3>Frequently Asked Questions</h3>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check6">
+                                <span class="acc-icons"></span>How many accounts can I open with cryptoprofusion.com?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="check6" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <p>
+                                Each client can open and manage only one single account. Please observe this rule.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <!-- End Panel Default -->
+
+                <!-- Panel Default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check7">
+                                <span class="acc-icons"></span>Are there any restrictions on investing?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="check7" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <p>
+                                Investments are accepted in strict accordance with investment proposals. Minimum investment is $300. Maximum amount of investment is $80,000.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Panel Default -->
+
+                <!-- Panel Default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check11">
+                                <span class="acc-icons"></span>What the company is doing with respect to the confidentiality of the personal data provided?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="check11" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <p>
+                                We collect your personal information solely for use in cooperation with investors. Under no circumstances will these personal data be disclosed to third parties.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Panel Default -->
+
+                <!-- Panel Default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check12">
+                                <span class="acc-icons"></span>Can I be sure of the security of my data?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="check12" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <p>
+                                We guarantee to our users the protection and safety of their personal information. The site is protected from all DDoS attacks. Any transmitted data passes SSL-encryption. We have only reliable script and high-class SSL certificates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Panel Default -->
+
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="about-content">
