@@ -1,4 +1,6 @@
 <!-- Start Footer Area -->
+
+<div style="width:100vw;z-index:99999999;position: fixed;bottom:0px;padding:10px 10px;background-color:#000;color:#fff;"><marquee><b><span style="color: chartreuse;">Why Choose Us?</span></b>   <span style="color: rgb(255, 38, 38);">(1) Secured ANTIDDOS SERVER</span>    <span style="color:orange;">(2) EV SSL Certificate</span>    <span style="color: cyan;">(3) Licensed Script</span>    <span style="color: white;">(4) Professional Management Team</span>    <span style="color: yellow;">(5) Profitable Investments</span>   <span style="color: blue;">(6) 24/7 Live Support</span></marquee></div>
 <footer class="footer1">
     <div class="footer-area">
         <div class="container">
@@ -14,7 +16,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </>
                 <!-- end single footer -->
                 <div class="col-md-3 col-sm-3 col-xs-12">
                     <div class="footer-content">

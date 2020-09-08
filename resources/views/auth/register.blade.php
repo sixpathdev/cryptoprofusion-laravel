@@ -46,11 +46,19 @@
                                         required data-error="Please enter your Email Address">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <label for="fullname">Password</label>
-                                    <input type="password" name="password" id="msg_subject" class="form-control" placeholder="Password"
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"
                                         required data-error="Please enter your password">
                                 </div>
-                            <input type="hidden" name="ref" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : 1 }}">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <label for="c_password">Confirm password</label>
+                                    <input type="password" name="password_confirmation" id="c_password" class="form-control" placeholder="Confirm Password"
+                                        required data-error="Please enter your correct password">
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <label for="c_password">Confirm password</label>
+                                    <input type="email" name="ref" class="form-control" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : 'superadmin@cryptoprofusion.com' }}">
+                                </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <label for="fullname">Phone</label>
                                     <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 312-883-3771"

@@ -122,7 +122,7 @@
                                 <div class="card-body p-3" style="background: white;">
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="refLink"
-                                            value="{{'https://www.cryptoprofusion.com/register?ref='.base64_encode($user->id)}}" />
+                                            value="{{'https://www.cryptoprofusion.com/register?ref='.base64_encode($user->email)}}" />
                                     </div>
                                     <button type="button" class="btn btn-primary" onclick="clickToCopy()">Copy Referral Link</button>
                                 </div>

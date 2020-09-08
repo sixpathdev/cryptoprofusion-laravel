@@ -556,6 +556,101 @@
                                     </div>
                                 </div>
                                 <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check4">
+                                                <span class="acc-icons"></span>Is the business of your company legal?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check4" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                cryptoprofusion.com is a Swiss company that performs all financial and commercial operations strictly in accordance with Swiss law, relying on licenses and permits issued by the Switzerland government supervisory authorities.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check5">
+                                                <span class="acc-icons"></span>Who can be your investor?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check5" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                cryptoprofusion.com is open to cooperate for everyone. Any individual or corporation from any nation may open an account with us, and we are happy to accept investors from wherever on the planet. The main condition is tolerating our terms.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check6">
+                                                <span class="acc-icons"></span>How many accounts can I open with cryptoprofusion.com?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check6" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                Each client can open and manage only one single account. Please observe this rule.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check7">
+                                                <span class="acc-icons"></span>Are there any restrictions on investing?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check7" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                Investments are accepted in strict accordance with investment proposals. Minimum investment is $300. Maximum amount of investment is $80,000.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check8">
+                                                <span class="acc-icons"></span>What is the account manager program?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check8" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                The account manager program is a set of technical solutions and financial capabilities that have been created for active investors who are ready to participate in the development of our company and receive a worthy reward and deal for it.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
                                 <!-- Panel Default -->
                                 {{-- <div class="panel panel-default">
                                     <div class="panel-heading">
