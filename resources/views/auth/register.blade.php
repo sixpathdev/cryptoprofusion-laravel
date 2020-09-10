@@ -56,8 +56,8 @@
                                         required data-error="Please enter your correct password">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <label for="ref">Who referred you?</label>
-                                    <input type="email" name="ref" class="form-control" id="ref" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : '' }}">
+                                    <label for="ref">Who referred you? (Referral's email address)</label>
+                                    <input type="email" name="ref" class="form-control" placeholder="referral@gmail.com" id="ref" value="{{ isset($_GET['ref']) ? base64_decode($_GET['ref']) : '' }}">
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <label for="fullname">Phone</label>

@@ -49,62 +49,101 @@
                 </div>
                 <!-- End Panel Default -->
 
-                <!-- Panel Default -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check7">
-                                <span class="acc-icons"></span>Are there any restrictions on investing?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="check7" class="panel-collapse collapse ">
-                        <div class="panel-body">
-                            <p>
-                                Investments are accepted in strict accordance with investment proposals. Minimum investment is $300. Maximum amount of investment is $80,000.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Panel Default -->
 
-                <!-- Panel Default -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check11">
-                                <span class="acc-icons"></span>What the company is doing with respect to the confidentiality of the personal data provided?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="check11" class="panel-collapse collapse ">
-                        <div class="panel-body">
-                            <p>
-                                We collect your personal information solely for use in cooperation with investors. Under no circumstances will these personal data be disclosed to third parties.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Panel Default -->
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check016">
+                                                <span class="acc-icons"></span>Is there any limit on the number of investment plans? Can I open different plans at the same time?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check016" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                There is no limit on the number of investment plans. Yes, you can open different plans at the same time.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
 
-                <!-- Panel Default -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check12">
-                                <span class="acc-icons"></span>Can I be sure of the security of my data?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="check12" class="panel-collapse collapse ">
-                        <div class="panel-body">
-                            <p>
-                                We guarantee to our users the protection and safety of their personal information. The site is protected from all DDoS attacks. Any transmitted data passes SSL-encryption. We have only reliable script and high-class SSL certificates.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Panel Default -->
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check017">
+                                                <span class="acc-icons"></span>Who can join your referral program?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check017" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                Anyone opening an account on our site can join our referral program.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check018">
+                                                <span class="acc-icons"></span>How does the 5% referral program work?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check018" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                The aim of the partnership program is to attract as many clients as possible. Being a partner, you get up to 5% bonus from each deposit made by your referral. The more referrals you attract, the more they deposit, the more bonuses you will receive.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check019">
+                                                <span class="acc-icons"></span>What is necessary to have an opportunity to earn the partner reward?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check019" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                To have an opportunity to earn the partner reward, you just need to create the personal account in our program; to have the own investments in the program is not necessarily.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                                
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check020">
+                                                <span class="acc-icons"></span>In case your question is not answered in the FAQs section, kindly get in touch with the Support Team.
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check020" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                In case your question is not answered in the FAQs section, kindly get in touch with the Support Team.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
 
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">

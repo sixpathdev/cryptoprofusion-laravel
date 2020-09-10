@@ -536,26 +536,6 @@
                                     </div>
                                 </div>
                                 <!-- End Panel Default -->
-                                <!-- Panel Default -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="check-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check3">
-                                                <span class="acc-icons"></span>Should I Trust This Platform?
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="check3" class="panel-collapse collapse ">
-                                        <div class="panel-body">
-                                            <p>
-                                                Same way bitcoin was a probability initially, but now everyone is
-                                                hopping on the ride seeing it is a promising one. Trust us to invest and
-                                                issue your profits weekly.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Panel Default -->
 
                                 <!-- Panel Default -->
                                 <div class="panel panel-default">
@@ -608,6 +588,44 @@
                                         <div class="panel-body">
                                             <p>
                                                 Each client can open and manage only one single account. Please observe this rule.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check09">
+                                                <span class="acc-icons"></span>How much does it cost to open an account with you?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check09" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                Opening account with us is absolutely free. There are no hidden costs and no maintenance fees.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check010">
+                                                <span class="acc-icons"></span>Can I lose my money investing with your company?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check010" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                Your investment, as well as your trust is our core values. We will make every effort to protect your money and reduce the risk of loss to zero.
                                             </p>
                                         </div>
                                     </div>
@@ -722,6 +740,162 @@
                                         <div class="panel-body">
                                             <p>
                                                 We guarantee to our users the protection and safety of their personal information. The site is protected from all DDoS attacks. Any transmitted data passes SSL-encryption. We have only reliable script and high-class SSL certificates.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check013">
+                                                <span class="acc-icons"></span>What kind of investment plans do you offer?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check013" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                cryptoprofusion.com offers two (Silver and Gold) investment plans depending on the size of deposit amount you wish to invest. <br>
+                                                Which payment methods do you accept? <br>
+                                                Bitcoin is the only payment method we accept. <br>
+                                                Can I cancel the financial transactions on the website? <br>
+                                                No, you cannot. All the operations are deemed final and are executed immediately.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check014">
+                                                <span class="acc-icons"></span>How do I make my first investment?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check014" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                In order to make an investment with us, you must first become our registered member. Once you are registered, you can always sign in to your private & secure account area using your username and password you first signed up with and make your investment. You will need to click on 'Make Deposit', there you can choose your prefered plan and follow the simple instructions on the page to complete your investment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check015">
+                                                <span class="acc-icons"></span>When can i get my invested amount?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check015" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                According to all investment offers, you will be able to get your invested amount after termination of the validity period of six months.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check016">
+                                                <span class="acc-icons"></span>Is there any limit on the number of investment plans? Can I open different plans at the same time?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check016" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                There is no limit on the number of investment plans. Yes, you can open different plans at the same time.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check017">
+                                                <span class="acc-icons"></span>Who can join your referral program?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check017" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                Anyone opening an account on our site can join our referral program.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check018">
+                                                <span class="acc-icons"></span>How does the 5% referral program work?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check018" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                The aim of the partnership program is to attract as many clients as possible. Being a partner, you get up to 5% bonus from each deposit made by your referral. The more referrals you attract, the more they deposit, the more bonuses you will receive.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check019">
+                                                <span class="acc-icons"></span>What is necessary to have an opportunity to earn the partner reward?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check019" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                To have an opportunity to earn the partner reward, you just need to create the personal account in our program; to have the own investments in the program is not necessarily.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                                
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="index.html#check020">
+                                                <span class="acc-icons"></span>In case your question is not answered in the FAQs section, kindly get in touch with the Support Team.
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check020" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                In case your question is not answered in the FAQs section, kindly get in touch with the Support Team.
                                             </p>
                                         </div>
                                     </div>
