@@ -7,9 +7,9 @@ use App\Referral;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-// use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Validation\Validator;
 
 class AuthController extends Controller
 {
@@ -18,7 +18,7 @@ class AuthController extends Controller
         $request->validate([
             'fullname' => 'required|max:255',
             'email' => 'required|unique:users',
-            'password' => 'required|required_with:password_confirmation|same:password_confirmation',
+            'password' => 'required|confirmed',
             'password_confirmation' => 'required',
             'phone' => 'required|unique:users',
             'ref' => 'required',
@@ -32,6 +32,7 @@ class AuthController extends Controller
         try {
 
             $userExists = User::where('email', $request->input('email'))->first();
+            $refDetails = User::where('email', $request->input('ref'))->first();
 
             if (!$userExists) {
                 $newUser = new User;
@@ -40,7 +41,7 @@ class AuthController extends Controller
                 $newUser->password = Hash::make($request->input('password'));
                 $newUser->phone = $request->input('phone');
                 $newUser->photo = '/profile/avatar.png';
-                $newUser->user_id = $request->input('ref');
+                $newUser->user_id = $refDetails->id;
                 $newUser->save();
 
                 $referred_user = User::where('email', $request->input('email'))->first();
@@ -61,6 +62,7 @@ class AuthController extends Controller
     public function refRegister(Request $request, $referred_user)
     {
         $user_id = User::where('email', $request->input('ref'))->first();
+
         $ref = new Referral;
         $ref->referral_id = $user_id->id;
         $ref->user_id = $referred_user->id;
